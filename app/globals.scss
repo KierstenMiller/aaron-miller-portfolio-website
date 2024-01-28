@@ -2,32 +2,120 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+$xxxx-small: 1px;
+$xxx-small: 2px;
+$xx-small: 4px;
+$x-small: 8px;
+$small: 12px;
+$medium: 16px;
+$large: 24px;
+$x-large: 32px;
+$xx-large: 40px;
+$xxx-large: 48px;
+$xxxx-large: 56px;
+$huge: 64px;
+$x-huge: 72px;
+$xx-huge: 80px;
+$xxx-huge: 88px;
+$xxxx-huge: 96px;
+
+$base-font-size: 62.5%; // using percentage here to change browser's base font-size from 16px to 10px, which is easier to think around
+$font-unit: 1rem;
+$text-xx-small: $font-unit;
+$text-x-small: calc(1.2 * $font-unit); // 12px
+$text-small: calc(1.4 * $font-unit); // 14px
+$text-medium: calc(2 * $font-unit); // 20px
+$text-large: calc(3 * $font-unit); // 30px
+$text-x-large: calc(3.6 * $font-unit); // 38px
+$text-xx-large: calc(4.8* $font-unit); // 48px
+
+$font-family: 'Inter', sans-serif;
+
+$deep-black: #191919;
+$base-gray: #636363;
+
+$desktop-gap: $huge;
+$mobile-gap: $xx-large;
+
+.primary-title {
+  font-family: $font-family;
+  font-style: normal;
+  font-size: $text-xx-large;
+  font-weight: 700;
+  line-height: normal;
+  color: $deep-black;
+
+  @media screen and (max-width: 768px) {
+    font-size: $text-x-large;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.secondary-title {
+  font-family: $font-family;
+  font-style: normal;
+  font-size: $text-xx-large;
+  font-weight: 700;
+  line-height: normal;
+  color: $base-gray;
+
+  @media screen and (max-width: 768px) {
+    font-size: $text-x-large;
   }
+}
+
+html {
+  background: white;
+  font-size: $base-font-size;
+  max-width: 1440px;
+  margin: auto;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: $font-family;
+  font-size: $text-medium;
+  color: $base-gray;
+  padding: $desktop-gap 100px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.work-menu {
+  ul {
+    display: flex;
   }
+
+  .main-link {
+    display: inline-block;
+    border: 1px solid $base-gray;
+    border-radius: $small;
+    padding: $x-small $small;
+
+    &:not(:last-child) {
+      margin-right: $small;
+    }
+
+    &.not-work {
+      background: $deep-black;
+      color: white;
+    }
+  }
+}
+
+.projects-menu {
+  ul {
+    display: grid;
+    gap: $xx-large;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: $xx-large $x-large;
+  }
+
+  .projects-menu {
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
+
 }
