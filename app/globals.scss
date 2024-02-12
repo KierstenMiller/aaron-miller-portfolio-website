@@ -100,11 +100,9 @@ body {
 }
 
 .projects-menu {
-  ul {
-    display: grid;
-    gap: $xx-large;
-    grid-template-columns: 1fr 1fr;
-  }
+  display: grid;
+  gap: $xx-large;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (max-width: 768px) {

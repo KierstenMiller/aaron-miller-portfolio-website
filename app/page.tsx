@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { ModalTrigger } from "./components/modals/modalTrigger/modalTrigger";
 
 export default function Home() {
   return (
@@ -17,30 +20,77 @@ export default function Home() {
             <li className="main-link not-work"><a href="/not-work">Not Work</a></li>
           </ul>
         </nav>
+        <div className="projects-menu">
+          <ModalTrigger
+            triggerConfig={{
+              text: <>
+                <span className="sr-only">Sleep Number Work</span>
+                <Image src="/images/sleep-number-work-thumbnail.png" width={600} height={310} alt="" />
+              </>
+            }}
+            modalConfig={{
+              header: { content: 'Header' },
+              body: <div>Sleep Number Body</div>,
+            }}
+          />
+          <ModalTrigger
+            triggerConfig={{
+              text: <>
+                <span className="sr-only">Space150 Website</span>
+                <Image src="/images/space150-website-thumbnail.png" width={600} height={310} alt="" />
+              </>
+            }}
+            modalConfig={{
+              header: { content: 'Header' },
+              body: <div>Space150 Website</div>,
+            }}
+          />
+          <ModalTrigger
+            triggerConfig={{
+              text: <>
+                <span className="sr-only">Music Analytics App</span>
+                <Image src="/images/music-analytics-app-thumbnail.png" width={600} height={310} alt="" />
+              </>
+            }}
+            modalConfig={{
+              header: { content: 'Header' },
+              body: <div>Music Analytics Body</div>,
+            }}
+          />
+          <ModalTrigger
+            triggerConfig={{
+              text: <>
+                <span className="sr-only">Medtronic Project</span>
+                <Image src="/images/medtronic-project-thumbnail.png" width={600} height={310} alt="" />
+              </>
+            }}
+            modalConfig={{
+              header: { content: 'Header' },
+              body: <div>Medtronic Body</div>,
+            }}
+          />
+        </div>
+        
         <nav aria-label="Secondary" className="projects-menu">
           <ul>
             <li>
               <a href="/work/sleep-number">
-                <span className="sr-only">Sleep Number Work</span>
-                <Image src="/images/sleep-number-work-thumbnail.png" width={600} height={310} alt="" />
+                
               </a>
             </li>
             <li>
               <a href="/work/space150">
-                <span className="sr-only">Space150 Website</span>
-                <Image src="/images/space150-website-thumbnail.png" width={600} height={310} alt="" />
+                
               </a>
             </li>
             <li>
               <a href="/work/music-analytics-app">
-                <span className="sr-only">Music Analytics App</span>
-                <Image src="/images/music-analytics-app-thumbnail.png" width={600} height={310} alt="" />
+                
               </a>
             </li>
             <li>
               <a href="/work/medtronic-project">
-                <span className="sr-only">Medtronic Project</span>
-                <Image src="/images/medtronic-project-thumbnail.png" width={600} height={310} alt="" />
+                
               </a>
             </li>
           </ul>
