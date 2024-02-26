@@ -92,7 +92,7 @@ export default function SleepNumber() {
                 <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase randged from low, medium, and high.</p>
             </div>
             <div className="blurb">
-                <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz.<b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customer's carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
+                <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz.<b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customers carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
             </div>
         </div>
         <Image src="/images/sleep-number/SN_desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
