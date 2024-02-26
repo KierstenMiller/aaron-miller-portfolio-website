@@ -1,7 +1,9 @@
-export const ProjectInfo = ({ snapshots, blurbs } : {
+export interface ProjectInfoI {
     snapshots: {id: string, label: string, content: {id: string, type: 'pill' | 'date', message: string}[]}[],
     blurbs: {id: string, message: string}[]
-}) => {
+}
+
+export const ProjectInfo = ({ snapshots, blurbs } : ProjectInfoI) => {
     return <div className="project-info">
          <div className="inventory-collection">
             {snapshots.map(s => <div key={s.id} className={`inventory ${s.id}`}>
