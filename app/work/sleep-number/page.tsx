@@ -30,7 +30,7 @@ export default function SleepNumber() {
                 {id: 'intro', message: 'As an in-house graphic designer at Sleep Number, I created digital content for their website\'s marketing campaigns and sales events, utilizing Adobe CC and Figma to build a wide array of imagery and web page layouts. Collaborating with a versatile team of creatives ensured that the webite always remaned beaufigul, well maintained, and firmly unified with other creative channels'}
             ]}
         />
-        <Image src="/static/images/sleep-number/SN_desktop_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
+        <Image src="/static/images/sleep-number/SN_Desktop_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
         <HeadBlurb
             heading={<>Styling an ever-changing website</>}
             blurbs={[
@@ -40,18 +40,18 @@ export default function SleepNumber() {
         />
         <ImageContainer
             images={[
-                {id:'desktop-2', src: '/static/images/sleep-number/SN_desktop_02.png', width: fullWidth, height: 600, alt: ''},
+                {id:'desktop-2', src: '/static/images/sleep-number/SN_Desktop_02.png', width: fullWidth, height: 600, alt: ''},
             ]}
         />
         <ImageContainer
             images={[
-                {id:'desktop-3', src: '/static/images/sleep-number/SN_desktop_03.png', width: fullWidth, height: 600, alt: ''},
+                {id:'desktop-3', src: '/static/images/sleep-number/SN_Desktop_03.png', width: fullWidth, height: 600, alt: ''},
             ]}
         />
         <ImageContainer 
             images={[
-                {id:'desktop-4', src: '/static/images/sleep-number/SN_desktop_04.png', width: fullWidth, height: 310, alt: ''},
-                {id:'desktop-5', src: '/static/images/sleep-number/SN_desktop_05.png', width: fullWidth, height: 310, alt: ''}
+                {id:'desktop-4', src: '/static/images/sleep-number/SN_Desktop_04.png', width: fullWidth, height: 310, alt: ''},
+                {id:'desktop-5', src: '/static/images/sleep-number/SN_Desktop_05.png', width: fullWidth, height: 310, alt: ''}
             ]}
         />
         <HeadBlurb
@@ -63,12 +63,12 @@ export default function SleepNumber() {
         />
         <ImageContainer 
             images={[
-                {id:'desktop-6', src: '/static/images/sleep-number/SN_desktop_06.png', width: fullWidth, height: 600, alt: ''},
+                {id:'desktop-6', src: '/static/images/sleep-number/SN_Desktop_06.png', width: fullWidth, height: 600, alt: ''},
             ]}
         />
         <ImageContainer 
             images={[
-                {id:'desktop-7', src: '/static/images/sleep-number/SN_desktop_07.png', width: fullWidth, height: 600, alt: ''},
+                {id:'desktop-7', src: '/static/images/sleep-number/SN_Desktop_07.png', width: fullWidth, height: 600, alt: ''},
             ]}
         />
         <HeadBlurb heading="Collaborating to discover excellence" blurbs={[
@@ -78,13 +78,13 @@ export default function SleepNumber() {
         ]}/>
         <ImageContainer 
             images={[
-                {id:'desktop-8', src: '/static/images/sleep-number/SN_desktop_08.png', width: fullWidth, height: 1205, alt: ''},
-                {id:'desktop-9', src: '/static/images/sleep-number/SN_desktop_09.png', width: fullWidth, height: 930, alt: ''},
+                {id:'desktop-8', src: '/static/images/sleep-number/SN_Desktop_08.png', width: fullWidth, height: 1205, alt: ''},
+                {id:'desktop-9', src: '/static/images/sleep-number/SN_Desktop_09.png', width: fullWidth, height: 930, alt: ''},
             ]}
         />
         <ImageContainer 
             images={[
-                {id:'desktop-7', src: '/static/images/sleep-number/SN_desktop_10.png', width: fullWidth, height: 600, alt: ''},
+                {id:'desktop-7', src: '/static/images/sleep-number/SN_Desktop_10.png', width: fullWidth, height: 600, alt: ''},
             ]}
         />
         <div className="blurb-collection">
@@ -95,7 +95,7 @@ export default function SleepNumber() {
                 <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz.<b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customers carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
             </div>
         </div>
-        <Image src="/static/images/sleep-number/SN_desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+        <Image src="/static/images/sleep-number/SN_Desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
         <div className="footer">
             <div className="secondary-title">Other Works</div>
         </div>
