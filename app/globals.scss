@@ -23,26 +23,40 @@ $base-font-size: 62.5%; // using percentage here to change browser's base font-s
 $font-unit: 1rem;
 $text-xx-small: $font-unit;
 $text-x-small: calc(1.2 * $font-unit); // 12px
-$text-small: calc(1.4 * $font-unit); // 14px
+$text-small: calc(1.6 * $font-unit); // 16px
 $text-medium: calc(2 * $font-unit); // 20px
 $text-large: calc(3 * $font-unit); // 30px
-$text-x-large: calc(3.6 * $font-unit); // 38px
+$text-x-large: calc(3.6 * $font-unit); // 36px
 $text-xx-large: calc(4.8* $font-unit); // 48px
 
 $font-family: 'Inter', sans-serif;
 
+$text-weight-regular: 400;
+$text-weight-medium: 500;
+$text-weight-semi-bold: 600;
+$text-weight-bold: 700;
+
+$default-line-height: 1.2; // default line-height value for most browsers and most fonts
+
 $deep-black: #191919;
 $base-gray: #636363;
+$mid-gray: #ccc;
+$light-gray: #E8ECF1;
 
 $desktop-gap: $huge;
 $mobile-gap: $xx-large;
+
+@mixin content-block {
+  margin-top: $huge;
+  margin-bottom: $huge;
+}
 
 .primary-title {
   font-family: $font-family;
   font-style: normal;
   font-size: $text-xx-large;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: $text-weight-bold;
+  line-height: $default-line-height;
   color: $deep-black;
 
   @media screen and (max-width: 768px) {
@@ -53,13 +67,13 @@ $mobile-gap: $xx-large;
 .secondary-title {
   font-family: $font-family;
   font-style: normal;
-  font-size: $text-xx-large;
-  font-weight: 700;
-  line-height: normal;
-  color: $base-gray;
+  font-size: $text-x-large;
+  font-weight: $text-weight-medium;
+  line-height: $default-line-height;
+  color: $deep-black;
 
   @media screen and (max-width: 768px) {
-    font-size: $text-x-large;
+    font-size: $text-large;
   }
 }
 
@@ -68,13 +82,28 @@ html {
   font-size: $base-font-size;
   max-width: 1440px;
   margin: auto;
+
+  @media screen and (min-width: 1441px) {
+    background: pink;
+  }
+}
+
+body,
+p {
+  font-family: $font-family;
+  font-style: normal;
+  font-size: $text-small;
+  font-weight: $text-weight-regular;
+  color: $base-gray;
+  line-height: 1.5;
 }
 
 body {
-  font-family: $font-family;
-  font-size: $text-medium;
-  color: $base-gray;
-  padding: $desktop-gap 100px;
+  padding: $desktop-gap 100px 0 100px;
+
+  @media screen and (max-width: 768px) {
+    padding: $xx-large $x-large;
+  }
 }
 
 .work-menu {
@@ -103,15 +132,118 @@ body {
   display: grid;
   gap: $xx-large;
   grid-template-columns: 1fr 1fr;
-}
 
-@media screen and (max-width: 768px) {
-  body {
-    padding: $xx-large $x-large;
-  }
-
-  .projects-menu {
+  @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+}
 
+//  project pages
+.page-heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.images-collection {
+  &.frames-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $xx-large;
+  }
+}
+
+.image-container {
+  background: $light-gray;
+  border-radius: 20px;
+  margin-bottom: $xx-large;
+}
+
+.project-info {
+  @include content-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $medium;
+}
+
+$pill-height: calc(3 * $font-unit); // 30px with border (making width relative to text size so formatting is still correct if use changes their font-size)
+
+@mixin pill-aligned-formatting {
+  display: inline-flex;
+  align-items: center;
+  height: $pill-height;
+}
+
+.inventory {
+  display: flex;
+  //align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: $medium;
+  }
+
+  .inventory-label {
+    // same on mobile and desktop
+    @include pill-aligned-formatting;
+    font-size: $text-medium;
+    font-weight: $text-weight-regular;
+    color: $base-gray;
+    min-width: calc(11.5 * $font-unit); // 115px (making width relative to text size so formatting is still correct if use changes their font-size)
+  }
+
+  .inventory-content {
+    .pill {
+      // same on mobile and desktop
+      @include pill-aligned-formatting;
+      font-size: $text-xx-small;
+      font-weight: $text-weight-semi-bold;
+      color: $base-gray;
+      padding-left: $x-small;
+      padding-right: $x-small;
+      border: 1px solid $base-gray;
+      margin-right: $x-small;
+      margin-bottom: $x-small;
+      border-radius: 10px;
+    }
+
+    .date {
+      // same on mobile and desktop
+      @include pill-aligned-formatting;
+      font-size: $text-small;
+      font-weight: $text-weight-regular;
+      color: $base-gray;
+    }
+  }
+}
+
+.head-blurb {
+  @include content-block;
+  display: grid;
+  grid-template-columns: 1fr 2fr; // 2/6
+  gap: $medium;
+
+  .secondary-title {
+    display: block;
+  }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr; // 3/6
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr; // 6/6
+  }
+}
+
+.blurb-collection {
+  @include content-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $xx-large;
+}
+
+.footer {
+  margin-top: $huge;
+  padding: $huge;
+  background: $mid-gray;
+  height: 600px;
 }
