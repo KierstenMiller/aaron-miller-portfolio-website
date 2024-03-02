@@ -177,8 +177,14 @@ main {
 
 .image-container {
   background: $light-gray;
+  padding-bottom: $xxx-large;
   border-radius: 20px;
   margin-bottom: $xx-large;
+}
+
+.image-description {
+  display: flex;
+  justify-content: space-evenly
 }
 
 .project-info {

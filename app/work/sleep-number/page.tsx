@@ -76,20 +76,34 @@ export default function SleepNumber() {
                     {id:'desktop-7', src: '/static/images/sleep-number/SN_Desktop_07.png', width: fullWidth, height: 600, alt: ''},
                 ]}
             />
-            <HeadBlurb heading="Collaborating to discover excellence" blurbs={[
-                {id: 'collaborating-1', message: 'When working with a large-scale identity system, ensuring that every asset is designed to match brand expectations is paramount. Building web pages that met, and exceeded, the need to Sleep Number\'s brand was accomplished through Figma\'s component library system.'},
-                {id: 'collaborating-2', message: 'Working cosely with marketing and UX teams, we identified opportunities for site improvement through the use of A/B testing; funneling customers to new approaches of content design nd arrangement against tried-and-true stategies, and utilizing the best results in future site initiatives.'},
-                {id: 'collaborating-3', message: 'This would lead to increased traggic to the sales/event pages, higher purchase rate on product pages, and greater design solutions.'},
-            ]}/>
-            <ImageContainer 
-                images={[
-                    {id:'desktop-8', src: '/static/images/sleep-number/SN_Desktop_08.png', width: fullWidth, height: 1205, alt: ''},
-                    {id:'desktop-9', src: '/static/images/sleep-number/SN_Desktop_09.png', width: fullWidth, height: 930, alt: ''},
+            <HeadBlurb
+                heading="Collaborating to discover excellence"
+                blurbs={[
+                    {id: 'collaborating-1', message: 'When working with a large-scale identity system, ensuring that every asset is designed to match brand expectations is paramount. Building web pages that met, and exceeded, the need to Sleep Number\'s brand was accomplished through Figma\'s component library system.'},
+                    {id: 'collaborating-2', message: 'Working cosely with marketing and UX teams, we identified opportunities for site improvement through the use of A/B testing; funneling customers to new approaches of content design nd arrangement against tried-and-true stategies, and utilizing the best results in future site initiatives.'},
+                    {id: 'collaborating-3', message: 'This would lead to increased traggic to the sales/event pages, higher purchase rate on product pages, and greater design solutions.'},
                 ]}
             />
             <ImageContainer 
                 images={[
-                    {id:'desktop-7', src: '/static/images/sleep-number/SN_Desktop_10.png', width: fullWidth, height: 600, alt: ''},
+                    {id:'desktop-8', src: '/static/images/sleep-number/SN_Desktop_08.png', description: "April 2023 - Sales Page", width: fullWidth, height: 1205, alt: ''},
+                    {id:'desktop-9', src: '/static/images/sleep-number/SN_Desktop_09.png', description: "June 2023 - Sales Page", width: fullWidth, height: 930, alt: ''},
+                ]}
+            />
+            <ImageContainer 
+                images={[
+                    {
+                        id:'desktop-7',
+                        src: '/static/images/sleep-number/SN_Desktop_10.png',
+                        width: fullWidth,
+                        height: 600,
+                        alt: '',
+                        description: <>
+                            <span>Low intent of purchase</span>
+                            <span>Medium intent of purchase</span>
+                            <span>High intent of purchase</span>
+                        </>
+                    },
                 ]}
             />
             <div className="blurb-collection">
