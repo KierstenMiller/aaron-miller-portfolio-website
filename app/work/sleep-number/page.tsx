@@ -165,7 +165,7 @@ export default function SleepNumber() {
             />
             <div className="blurb-collection mobile-max-down-only">
                 <div className="blurb">
-                    <p><b>Low intent</b>(first time) visitors to the website would be introduced Sleep Number's mission and bed quiz</p>
+                    <p><b>Low intent</b>(first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz</p>
                 </div>
             </div>
             <ImageContainer
@@ -187,7 +187,7 @@ export default function SleepNumber() {
             />
             <div className="blurb-collection mobile-max-down-only">
                 <div className="blurb">
-                    <p><b>High intent</b> (purchasing) customer's carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
+                    <p><b>High intent</b> (purchasing) customers carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                 </div>
             </div>
             <Image className="tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
