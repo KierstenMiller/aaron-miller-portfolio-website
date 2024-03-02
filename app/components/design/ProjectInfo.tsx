@@ -3,9 +3,11 @@ export interface ProjectInfoI {
     blurbs: {id: string, message: string}[]
 }
 
+
+
 export const ProjectInfo = ({ snapshots, blurbs } : ProjectInfoI) => {
-    return <div className="project-info">
-         <div className="inventory-collection">
+    const Inventory = () => (
+        <div className="inventory-collection">
             {snapshots.map(s => <div key={s.id} className={`inventory ${s.id}`}>
                 <div className="inventory-label">{s.label}:</div>
                 <div className="inventory-content">
@@ -13,8 +15,20 @@ export const ProjectInfo = ({ snapshots, blurbs } : ProjectInfoI) => {
                 </div>
             </div>)}
         </div>
-        <div className="blurb-collection-FIX-NAMESPACE-ISSUE">
+    )
+     const Blurbs = () => (
+        <div className="project-blurb-collection">
             {blurbs.map(b => <p key={b.id}>{b.message}</p>)}
         </div>
-    </div>
+     )
+    return <>
+        <div className="project-info desktop">
+            <Inventory />
+            <Blurbs />
+        </div>
+        <div className="project-info mobile">
+            <Blurbs />
+            <Inventory />
+        </div>
+    </>
 }

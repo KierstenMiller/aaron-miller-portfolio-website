@@ -24,7 +24,6 @@ export default function SleepNumber() {
             </div>
         </header>
         <main>
-            
             <ProjectInfo
                 snapshots={[
                     {id: 'services', label: 'Services', content: [{id: 'graphic-design', type: 'pill', message: 'Graphic Design'}, {id: 'web-design', type: 'pill', message: 'Web Design'}, {id: 'production-design', type: 'pill', message: 'Production Design'}, {id: 'ux-ui-strategy', type: 'pill', message: 'UX/UI Strategy'}]},
@@ -35,7 +34,8 @@ export default function SleepNumber() {
                     {id: 'intro', message: 'As an in-house graphic designer at Sleep Number, I created digital content for their website\'s marketing campaigns and sales events, utilizing Adobe CC and Figma to build a wide array of imagery and web page layouts. Collaborating with a versatile team of creatives ensured that the webite always remaned beaufigul, well maintained, and firmly unified with other creative channels'}
                 ]}
             />
-            <Image src="/static/images/sleep-number/SN_Desktop_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
+            <Image className="tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
+            <Image className="mobile-max-down-only" src="/static/images/sleep-number/SN_Mobile_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
             <HeadBlurb
                 heading={<>Styling an ever-changing website</>}
                 blurbs={[
@@ -45,7 +45,18 @@ export default function SleepNumber() {
             />
             <ImageContainer
                 images={[
-                    {id:'desktop-2', src: '/static/images/sleep-number/SN_Desktop_02.png', width: fullWidth, height: 600, alt: ''},
+                    {
+                        id:'desktop-2',
+                        src: '/static/images/sleep-number/SN_Desktop_02.png',
+                        srcMobile: '/static/images/sleep-number/SN_Mobile_02.png',
+                        width: fullWidth, height: 600, alt: ''
+                    },
+                ]}
+            />
+            <ImageContainer
+                className="mobile-max-down-only"
+                images={[
+                    {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_03.png', width: fullWidth, height: 600, alt: ''},
                 ]}
             />
             <ImageContainer
@@ -68,12 +79,38 @@ export default function SleepNumber() {
             />
             <ImageContainer 
                 images={[
-                    {id:'desktop-6', src: '/static/images/sleep-number/SN_Desktop_06.png', width: fullWidth, height: 600, alt: ''},
+                    {
+                        id:'desktop-6',
+                        src: '/static/images/sleep-number/SN_Desktop_06.png',
+                        srcMobile: '/static/images/sleep-number/SN_Mobile_07.png',
+                        width: fullWidth,
+                        height: 600,
+                        alt: ''
+                    },
+                ]}
+            />
+            <ImageContainer
+                className="mobile-max-down-only"
+                images={[
+                    {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_08.png', width: fullWidth, height: 600, alt: ''},
                 ]}
             />
             <ImageContainer 
                 images={[
-                    {id:'desktop-7', src: '/static/images/sleep-number/SN_Desktop_07.png', width: fullWidth, height: 600, alt: ''},
+                    {
+                        id:'desktop-7',
+                        src: '/static/images/sleep-number/SN_Desktop_07.png',
+                        srcMobile: '/static/images/sleep-number/SN_Mobile_09.png',
+                        width: fullWidth,
+                        height: 600,
+                        alt: ''
+                    },
+                ]}
+            />
+            <ImageContainer
+                className="mobile-max-down-only"
+                images={[
+                    {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_10.png', width: fullWidth, height: 600, alt: ''},
                 ]}
             />
             <HeadBlurb
@@ -91,6 +128,7 @@ export default function SleepNumber() {
                 ]}
             />
             <ImageContainer 
+                className="tablet-min-up-only"
                 images={[
                     {
                         id:'desktop-7',
@@ -106,7 +144,7 @@ export default function SleepNumber() {
                     },
                 ]}
             />
-            <div className="blurb-collection">
+            <div className="blurb-collection tablet-min-up-only">
                 <div className="blurb">
                     <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase randged from low, medium, and high.</p>
                 </div>
@@ -114,7 +152,46 @@ export default function SleepNumber() {
                     <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz.<b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customers carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                 </div>
             </div>
-            <Image src="/static/images/sleep-number/SN_Desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+            <div className="blurb-collection mobile-max-down-only">
+                <div className="blurb">
+                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase randged from low, medium, and high.</p>
+                </div>
+            </div>
+            <ImageContainer
+                className="mobile-max-down-only"
+                images={[
+                    {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_13.png', width: fullWidth, height: 600, alt: ''},
+                ]}
+            />
+            <div className="blurb-collection mobile-max-down-only">
+                <div className="blurb">
+                    <p><b>Low intent</b>(first time) visitors to the website would be introduced Sleep Number's mission and bed quiz</p>
+                </div>
+            </div>
+            <ImageContainer
+                className="mobile-max-down-only"
+                images={[
+                    {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_14.png', width: fullWidth, height: 600, alt: ''},
+                ]}
+            />
+            <div className="blurb-collection mobile-max-down-only">
+                <div className="blurb">
+                    <p><b>Medium intent</b> (return customers) were offered further insight into which smart bed was best for them.</p>
+                </div>
+            </div>
+            <ImageContainer
+                className="mobile-max-down-only"
+                images={[
+                    {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_15.png', width: fullWidth, height: 600, alt: ''},
+                ]}
+            />
+            <div className="blurb-collection mobile-max-down-only">
+                <div className="blurb">
+                    <p><b>High intent</b> (purchasing) customer's carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
+                </div>
+            </div>
+            <Image className="tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+            <Image className="mobile-max-down-only" src="/static/images/sleep-number/SN_Mobile_16.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
         </main>
         <footer className="footer-container">
             <h2 className="sr-only">Footer</h2>

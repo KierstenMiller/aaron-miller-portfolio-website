@@ -43,23 +43,40 @@ $base-gray: #636363;
 $mid-gray: #ccc;
 $light-gray: #E8ECF1;
 
-$desktop-gap: $huge;
-$mobile-gap: $xx-large;
+$desktop-spacing: $huge; // 64px
+$mobile-spacing: $xx-large; // 40px
+
+$desktop-gap: $xx-large; // 40px
+$mobile-gap: $large; // 24px
+
+$desktop-gutter: $xxxx-huge;
+$mobile-gutter: $x-large;
+
+$desktop-max: 1440px;
+$desktop-min: 1025px;
+$tablet-max: 1024px;
+$tablet-min: 769px;
+$mobile-max: 768px;
 
 @mixin content-block {
-  margin-top: $huge;
-  margin-bottom: $huge;
+  margin-top: $desktop-spacing;
+  margin-bottom: $desktop-spacing;
+
+  @media screen and (max-width: $tablet-max) {
+    margin-top: $mobile-spacing;
+    margin-bottom: $mobile-spacing;
+  }
 }
 
 @mixin restricted-container {
   max-width: 1440px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: $desktop-gutter;
+  padding-right: $desktop-gutter;
   margin: auto;
 
-  @media screen and (max-width: 768px) {
-    padding-left: $x-large;
-    padding-right: $x-large;
+  @media screen and (max-width: $mobile-max) {
+    padding-left: $mobile-gutter;
+    padding-right: $mobile-gutter;
   }
 }
 
@@ -76,7 +93,7 @@ $mobile-gap: $xx-large;
   line-height: $default-line-height;
   color: $deep-black;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mobile-max) {
     font-size: $text-x-large;
   }
 }
@@ -89,7 +106,7 @@ $mobile-gap: $xx-large;
   line-height: $default-line-height;
   color: $deep-black;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mobile-max) {
     font-size: $text-large;
   }
 }
@@ -97,10 +114,6 @@ $mobile-gap: $xx-large;
 html {
   background: white;
   font-size: $base-font-size;
-
-  // @media screen and (min-width: 1441px) {
-  //   background: pink;
-  // }
 }
 
 body,
@@ -115,17 +128,15 @@ p {
 
 header {
   @include restricted-container;
-  padding-top: $desktop-gap;
+  padding-top: $desktop-spacing;
 }
 
 main {
   @include restricted-container;
+  padding-bottom: $desktop-spacing;
 
-  padding-bottom: $desktop-gap;
-
-  @media screen and (max-width: 768px) {
-    padding-top: $xx-large;
-    padding-bottom: $xx-large;
+  @media screen and (max-width: $mobile-max) {
+    padding-bottom: $mobile-spacing;
   }
 }
 
@@ -153,10 +164,11 @@ main {
 
 .projects-menu {
   display: grid;
-  gap: $xx-large;
+  gap: $desktop-gap;
   grid-template-columns: 1fr 1fr;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $mobile-max) {
+    gap: $mobile-gap;
     grid-template-columns: 1fr;
   }
 }
@@ -168,23 +180,37 @@ main {
 }
 
 .images-collection {
+  margin-bottom: $desktop-spacing;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: $mobile-spacing;
+  }
+
   &.frames-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: $xx-large;
+    gap: $desktop-gap;
+
+    @media screen and (max-width: $mobile-max) {
+      grid-template-columns: 1fr;
+      gap: $mobile-gap;
+    }
   }
 }
 
 .image-container {
   background: $light-gray;
-  padding-bottom: $xxx-large;
   border-radius: 20px;
-  margin-bottom: $xx-large;
 }
 
 .image-description {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  padding-bottom: $desktop-spacing;
+
+  @media screen and (max-width: $mobile-max) {
+    padding-bottom: $mobile-spacing;
+  }
 }
 
 .project-info {
@@ -192,6 +218,24 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: $medium;
+
+  &.desktop {
+    @media screen and (max-width: $tablet-max) {
+      display: none;
+    }
+  }
+
+  &.mobile {
+    display: none;
+
+    @media screen and (max-width: $tablet-max) {
+      display: block;
+
+      .project-blurb-collection {
+        margin-bottom: $mobile-spacing;
+      }
+    }
+  }
 }
 
 $pill-height: calc(3 * $font-unit); // 30px with border (making width relative to text size so formatting is still correct if use changes their font-size)
@@ -204,7 +248,6 @@ $pill-height: calc(3 * $font-unit); // 30px with border (making width relative t
 
 .inventory {
   display: flex;
-  //align-items: center;
 
   &:not(:last-child) {
     margin-bottom: $medium;
@@ -247,18 +290,26 @@ $pill-height: calc(3 * $font-unit); // 30px with border (making width relative t
   @include content-block;
   display: grid;
   grid-template-columns: 1fr 2fr; // 2/6
-  gap: $medium;
+  gap: $desktop-gap;
+
+  @media screen and (max-width: $tablet-max) {
+    grid-template-columns: 1fr 1fr; // 3/6
+  }
+
+  @media screen and (max-width: $mobile-max) {
+    grid-template-columns: 1fr; // 6/6
+    gap: $mobile-gap;
+    margin-bottom: $mobile-gap;
+  }
 
   .secondary-title {
     display: block;
   }
 
-  @media screen and (max-width: 1200px) {
-    grid-template-columns: 1fr 1fr; // 3/6
-  }
-
-  @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr; // 6/6
+  .blurbs-container {
+    p:not(:last-child) {
+      margin-bottom: $mobile-gap;
+    }
   }
 }
 
@@ -270,17 +321,27 @@ $pill-height: calc(3 * $font-unit); // 30px with border (making width relative t
 }
 
 .footer-container {
-  padding: $huge;
+  @include restricted-container;
+  padding-top: $desktop-spacing;
+  padding-bottom: $desktop-spacing;
   background: $mid-gray;
 
-  .footer {
-    @include restricted-container;
+  @media screen and (max-width: $mobile-max) {
+    padding-top: $mobile-spacing;
+    padding-bottom: $mobile-spacing;
 
+  }
+
+  .footer {
     .footer-heading-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: $huge;
+      padding-bottom: $desktop-spacing;
+
+      @media screen and (max-width: $mobile-max) {
+        padding-bottom: $mobile-spacing;
+      }
 
       .back-to-top {
         @include pill;
@@ -291,4 +352,22 @@ $pill-height: calc(3 * $font-unit); // 30px with border (making width relative t
       }
     }
   }
+}
+
+// UTIL (At bottom so these styles can override other styles)
+.tablet-min-up-only {
+  display: none;
+
+  @media screen and (min-width: $tablet-min) {
+    display: block;
+  }
+}
+
+.mobile-max-down-only {
+  display: none;
+
+  @media screen and (max-width: $mobile-max) {
+    display: block;
+  }
+
 }
