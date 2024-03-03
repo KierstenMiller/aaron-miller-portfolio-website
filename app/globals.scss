@@ -208,6 +208,10 @@ main {
 
   &.padding {
     padding: $desktop-spacing;
+
+    @media screen and (max-width: $mobile-max) {
+      padding: $mobile-spacing;
+    }
   }
 }
 
