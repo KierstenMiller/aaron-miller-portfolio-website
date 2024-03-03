@@ -7,8 +7,10 @@ import { ImageContainer } from "app/components/design/ImageContainer";
 import { ProjectInfo } from "app/components/design/ProjectInfo";
 import { ProjectNav } from "app/components/project-navigation/ProjectNav";
 
+export const fullWidth = 1240;
+
 export default function SleepNumber() {
-    const fullWidth = 1240;
+    
     return (<div>
         <header id="top">
             <div className="page-heading-container">

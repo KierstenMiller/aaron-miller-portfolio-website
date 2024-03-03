@@ -135,6 +135,10 @@ main {
   @include restricted-container;
   padding-bottom: $desktop-spacing;
 
+  .images-collection:last-child {
+    margin-bottom: 0;
+  }
+
   @media screen and (max-width: $mobile-max) {
     padding-bottom: $mobile-spacing;
   }
@@ -180,10 +184,10 @@ main {
 }
 
 .images-collection {
-  margin-bottom: $desktop-spacing;
+  margin-bottom: $desktop-gap;
 
   @media screen and (max-width: $mobile-max) {
-    margin-bottom: $mobile-spacing;
+    margin-bottom: $mobile-gap;
   }
 
   &.frames-2 {
@@ -231,10 +235,18 @@ main {
     @media screen and (max-width: $tablet-max) {
       display: block;
 
-      .project-blurb-collection {
-        margin-bottom: $mobile-spacing;
-      }
+
     }
+  }
+}
+
+.project-blurb-collection {
+  p:not(:last-child) {
+    margin-bottom: $mobile-gap;
+  }
+
+  @media screen and (max-width: $tablet-max) {
+    margin-bottom: $mobile-spacing;
   }
 }
 
@@ -318,6 +330,28 @@ $pill-height: calc(3 * $font-unit); // 30px with border (making width relative t
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: $xx-large;
+}
+
+.bare-images-collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $desktop-gap;
+  margin-bottom: $desktop-gap;
+
+  @media screen and (max-width: $mobile-max) {
+    grid-template-columns: 1fr;
+    gap: $mobile-gap;
+    margin-bottom: $mobile-gap;
+  }
+
+}
+
+.bare-image {
+  margin-bottom: $desktop-gap;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: $mobile-gap;
+  }
 }
 
 .footer-container {
