@@ -205,6 +205,10 @@ main {
 .image-container {
   background: $light-gray;
   border-radius: 20px;
+
+  &.padding {
+    padding: $desktop-spacing;
+  }
 }
 
 .image-description {

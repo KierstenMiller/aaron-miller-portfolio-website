@@ -1,5 +1,5 @@
+import { ImageContainer } from "app/components/design/ImageContainer";
 import { ProductPageLayout } from "app/components/project-page-layout/ProjectPageLayout";
-import Image from "next/image";
 import { fullWidth } from "../sleep-number/page";
 
 export default function Space150() {
@@ -17,9 +17,29 @@ export default function Space150() {
             ]
         }}
     >
-        <Image className="bare-image" src="/static/images/space150/space150_Desktop_01.gif" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
-        <Image className="bare-image" src="/static/images/space150/space150_Desktop_02.gif" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
-        <Image className="bare-image" src="/static/images/space150/space150_Desktop_03.gif" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
-        <Image className="bare-image" src="/static/images/space150/space150_Desktop_04.gif" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+         <ImageContainer
+            applyPadding={true}
+            images={[
+                {id:'animation-1', src: '/static/images/space150/space150_Desktop_01.gif', width: fullWidth, height: 600, alt: ''},
+            ]}
+        />
+        <ImageContainer
+            applyPadding={true}
+            images={[
+                {id:'animation-2', src: '/static/images/space150/space150_Desktop_02.gif', width: fullWidth, height: 600, alt: ''},
+            ]}
+        /> 
+        <ImageContainer
+            applyPadding={true}
+            images={[
+                {id:'animation-4', src: '/static/images/space150/space150_Desktop_04.gif', width: fullWidth, height: 600, alt: ''},
+            ]}
+        />
+        <ImageContainer
+            applyPadding={true}
+            images={[
+                {id:'animation-3', src: '/static/images/space150/space150_Desktop_03.gif', width: fullWidth, height: 600, alt: ''},
+            ]}
+        />   
     </ProductPageLayout>
 }
