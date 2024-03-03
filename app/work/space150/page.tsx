@@ -1,19 +1,25 @@
 import { ProductPageLayout } from "app/components/project-page-layout/ProjectPageLayout";
+import Image from "next/image";
+import { fullWidth } from "../sleep-number/page";
 
 export default function Space150() {
     return <ProductPageLayout
         primaryTitle="space150 website"
         projectInfo={{
             snapshots: [
-                {id: 'services', label: 'Services', content: [{id: 'graphic-design', type: 'pill', message: 'Graphic Design'}, {id: 'web-design', type: 'pill', message: 'Web Design'}, {id: 'production-design', type: 'pill', message: 'Production Design'}, {id: 'ux-ui-strategy', type: 'pill', message: 'UX/UI Strategy'}]},
-                {id: 'tools', label: 'Tools', content: [{id: 'figma', type: 'pill', message: 'Figma'}, {id: 'sketch', type: 'pill', message: 'Sketch'}, {id: 'photoshop', type: 'pill', message: 'Photoshop'}, {id: 'illustrator', type: 'pill', message: 'Illustrator'}, {id: 'indesign', type: 'pill', message: 'InDesign'}, {id: 'after-effects', type: 'pill', message: 'After Effects'}]},
-                {id: 'date', label: 'Date', content: [{id: 'date', type: 'date', message: '2019-2023'}]}
+                {id: 'services', label: 'Services', content: [{id: 'web-design', type: 'pill', message: 'Web Design'}, {id: 'Web Animation', type: 'pill', message: 'Web Animation'}]},
+                {id: 'tools', label: 'Tools', content: [{id: 'sketch', type: 'pill', message: 'Sketch'}, {id: 'invision', type: 'pill', message: 'InVision'}, {id: 'HTML', type: 'pill', message: 'HTML'}, {id: 'CSS', type: 'pill', message: 'CSS'}, {id: 'Javascript', type: 'pill', message: 'Javascript'}, {id: 'spiritapp', type: 'pill', message: 'spiritapp.io'}, {id: 'Contentful', type: 'pill', message: 'Contentful'}]},
+                {id: 'date', label: 'Date', content: [{id: 'date', type: 'date', message: '2019'}]}
             ],
             blurbs: [
-                {id: 'intro', message: 'As an in-house graphic designer at Sleep Number, I created digital content for their website\'s marketing campaigns and sales events, utilizing Adobe CC and Figma to build a wide array of imagery and web page layouts. Collaborating with a versatile team of creatives ensured that the webite always remaned beaufigul, well maintained, and firmly unified with other creative channels'}
+                {id: 'space150-is-an', message: 'space150 is an agency that has the unique goal of rebranding their website every 150 days. During my summer there as graphic design intern I was brought aboard the team overseeing the company’s current rebrand to assist with website design/animation.'},
+                {id: 'i-partnered-with', message: 'I partnered with the creative director to implement a new brand style to the website and worked with developers to craft fine-tuned web animations for the site. I also managed the transferring of project case-studies to a new CMS.'},
             ]
         }}
     >
-        SPACE150 CONTENT WIP
+        <Image className="bare-image" src="/static/images/space150/space150_Desktop_01.gif" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+        <Image className="bare-image" src="/static/images/space150/space150_Desktop_02.gif" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+        <Image className="bare-image" src="/static/images/space150/space150_Desktop_03.gif" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+        <Image className="bare-image" src="/static/images/space150/space150_Desktop_04.gif" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
     </ProductPageLayout>
 }
