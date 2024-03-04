@@ -27,7 +27,7 @@ export default function Home() {
             <Image src='/static/images/aaron-profile-pic.jpg' alt="Aaron Miller" width={1920} height={1080} />
           </div>
           <div>
-            <h2 className="secondary-title">Hi, I'm Aaron!</h2>
+            <h2 className="secondary-title">Hi, I&apos;m Aaron!</h2>
             <p>I am a digital designer who loves creating clean user experiences for web experiences while also specializing in the design of graphics, print, and typography.</p>
             <p>I earned my Bachelor of Graphic Design from the Minneapolis College of Art and Design in 2018 and have worked design internships at HCL Technologies and space150. Most recently I was a Graphic Designer for Sleep Number’s web team.</p>
             <p>Currently lives in Minneapolis with his wife, two cats, and puppy.</p>
