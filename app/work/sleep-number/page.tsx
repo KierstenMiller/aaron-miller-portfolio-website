@@ -33,7 +33,7 @@ export default function SleepNumber() {
                     {id: 'date', label: 'Date', content: [{id: 'date', type: 'date', message: '2019-2023'}]}
                 ]}
                 blurbs={[
-                    {id: 'intro', message: 'As an in-house graphic designer at Sleep Number, I created digital content for their website\'s marketing campaigns and sales events, utilizing Adobe CC and Figma to build a wide array of imagery and web page layouts. Collaborating with a versatile team of creatives ensured that the webite always remaned beaufigul, well maintained, and firmly unified with other creative channels'}
+                    {id: 'intro', message: 'As an in-house graphic designer at Sleep Number, I created digital content for their website’s marketing campaigns and sales events, utilizing Adobe CC and Figma to build a wide array of imagery and web page layouts. Collaborating with a versatile team of creatives ensured that the website always remained beautiful, well maintained, and firmly unified with other creative channels.'}
                 ]}
             />
             <Image className="tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
@@ -41,8 +41,8 @@ export default function SleepNumber() {
             <HeadBlurb
                 heading={<>Styling an ever-changing website</>}
                 blurbs={[
-                    {id: 'changing-1', message: 'Sleep Number is a fast-paced ecommerce brand whose marketing, boliday, and sales events are always on rotation, meaning that there was consistently high demand for new imagery and visual content for their wbesite'},
-                    {id: 'changing-2', message: 'Using Adobe CC and Figma, the imagery I devloped was stylized to work seamlessly and beautifully within the brand identity/system while also performing as accessible and responseive web elements. This involved creating multiple sizes/states of each asset to tensue that the visuals displayed perfectly across desktop and mobile screens.'}
+                    {id: 'changing-1', message: 'Sleep Number is a fast-paced ecommerce brand whose marketing, holiday, and sales events are always on rotation, meaning that there was consistently high demand for new imagery and visual content for their website.'},
+                    {id: 'changing-2', message: 'Using Adobe CC and Figma, the imagery I developed was stylized to work seamlessly and beautifully within the brand identity/system while also performing as accessible and responsive web elements. This involved creating multiple sizes/states of each asset to ensure that the visuals displayed perfectly across desktop and mobile screens.'}
                 ]}
             />
             <ImageContainer
@@ -75,8 +75,8 @@ export default function SleepNumber() {
             <HeadBlurb
                 heading="Building consistently great web experiences"
                 blurbs={[
-                    {id: 'web-experiences-1', message: 'When working with a large-scale identity system, ensuring that every asset is designed to match brand expectations is paramount. Building web pages that met, and exceeded, the need to Sleep Number\'s brand was accomplished through Figma\'s component library system.'},
-                    {id: 'web-experiences-2', message: 'By master this library, projects involving new or updated web pages of any scale were easily and quickly buildable while maintaining brand identity'}
+                    {id: 'web-experiences-1', message: 'When working with a large-scale identity system, ensuring that every asset is designed to match brand expectations is paramount. Building web pages that met, and exceeded, the needs of Sleep Number’s brand was accomplished through Figma’s component library system.'},
+                    {id: 'web-experiences-2', message: 'By mastering this library, projects involving new or updated web pages of any scale were easily and quickly buildable while maintaining brand identity.'}
                 ]}
             />
             <ImageContainer 
@@ -118,9 +118,9 @@ export default function SleepNumber() {
             <HeadBlurb
                 heading="Collaborating to discover excellence"
                 blurbs={[
-                    {id: 'collaborating-1', message: 'When working with a large-scale identity system, ensuring that every asset is designed to match brand expectations is paramount. Building web pages that met, and exceeded, the need to Sleep Number\'s brand was accomplished through Figma\'s component library system.'},
-                    {id: 'collaborating-2', message: 'Working cosely with marketing and UX teams, we identified opportunities for site improvement through the use of A/B testing; funneling customers to new approaches of content design nd arrangement against tried-and-true stategies, and utilizing the best results in future site initiatives.'},
-                    {id: 'collaborating-3', message: 'This would lead to increased traggic to the sales/event pages, higher purchase rate on product pages, and greater design solutions.'},
+                    {id: 'collaborating-1', message: 'Sleep Number is always seeking ways to maximize customer engagement, with new ideas constantly in the pipeline for how customers interact with the many pages of their website.'},
+                    {id: 'collaborating-2', message: 'Working closely with marketing and UX teams, we identified opportunities for site improvement through the use of A/B testing; funneling customers to new approaches of content design and arrangement against tried-and-true strategies, and utilizing the best results in future site initiatives.'},
+                    {id: 'collaborating-3', message: 'This would lead to increased traffic to the sales/event pages, higher purchase rate on product pages, and greater design solutions.'},
                 ]}
             />
             <ImageContainer 
@@ -148,15 +148,15 @@ export default function SleepNumber() {
             />
             <div className="blurb-collection tablet-min-up-only">
                 <div className="blurb">
-                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase randged from low, medium, and high.</p>
+                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase ranged from low, medium, and high.</p>
                 </div>
                 <div className="blurb">
-                    <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz.<b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customers carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
+                    <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Number’s mission and bed quiz. <b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customer’s carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                 </div>
             </div>
             <div className="blurb-collection mobile-max-down-only">
                 <div className="blurb">
-                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase randged from low, medium, and high.</p>
+                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase ranged from low, medium, and high.</p>
                 </div>
             </div>
             <ImageContainer
@@ -167,7 +167,7 @@ export default function SleepNumber() {
             />
             <div className="blurb-collection mobile-max-down-only">
                 <div className="blurb">
-                    <p><b>Low intent</b>(first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz</p>
+                    <p><b>Low intent</b>(first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz.</p>
                 </div>
             </div>
             <ImageContainer
