@@ -13,12 +13,12 @@ export default function Home() {
         </h1>
       </header>
       <main>
-        <nav aria-label="Primary" className="work-menu mb-24">
+        {/* <nav aria-label="Primary" className="work-menu mb-24">
           <ul>
             <li className="main-link work"><a href="">Work</a></li>
             <li className="main-link not-work"><a href="/not-work">Not Work</a></li>
           </ul>
-        </nav>
+        </nav> */}
         <ProjectNav ariaLabel="Secondary" />
       </main>
     </div>
