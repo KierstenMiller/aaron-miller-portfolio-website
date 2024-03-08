@@ -8,11 +8,14 @@ export default function Home() {
   return (
     <div>
       <header id="top">
-        <h1>
-          <div className="primary-title mb-24">Aaron Miller</div>
-          <div className="secondary-title hidden md:block mb-24">A digital designer who creates efficient web experiences, beautiful graphic solutions, and experimental typography.</div>
-          <div className="secondary-title md:hidden mb-16">A graphic designer who specializes in Web Design, Branding, and UX/UI. Currenly based in Minneapolis</div>
-        </h1>
+        <div className="home-header">
+          <h1 className="primary-title mb-24">Aaron Miller</h1>
+          <div className="actions-menu">
+            <a className="ghostly-button" href="#profile">Info</a>
+            <a className="ghostly-button" href="#contact">Contact</a>
+          </div>
+        </div>
+        <p className="primary-title header-description mb-24">A digital designer who creates efficient web experiences, beautiful graphic solutions, and experimental typography.</p>
       </header>
       <main>
         {/* <nav aria-label="Primary" className="work-menu mb-24">
@@ -23,11 +26,13 @@ export default function Home() {
         </nav> */}
         <ProjectNav ariaLabel="Secondary" />
         <div className="profile">
+        <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
-            <Image src='/static/images/aaron-profile-pic.jpg' alt="Aaron Miller" width={1920} height={1080} />
+            <Image className="tablet-min-up-only" src='/static/images/aaron-profile-pic.jpg' alt="Aaron Miller" width={1920} height={1080} />
+            <Image className="mobile-max-down-only" src='/static/images/aaron-profile-pic_mobile.jpg' alt="Aaron Miller" width={1920} height={1080} />
           </div>
           <div>
-            <h2 className="secondary-title">Hi, I&apos;m Aaron!</h2>
+            <h2 id="profile" className="secondary-title tablet-min-up-only">Hi, I&apos;m Aaron!</h2>
             <p>I am a digital designer who loves creating clean user experiences for web experiences while also specializing in the design of graphics, print, and typography.</p>
             <p>I earned my Bachelor of Graphic Design from the Minneapolis College of Art and Design in 2018 and have worked design internships at HCL Technologies and space150. Most recently I was a Graphic Designer for Sleep Number’s web team.</p>
             <p>Currently lives in Minneapolis with his wife, two cats, and puppy.</p>
@@ -41,15 +46,15 @@ export default function Home() {
         <div className="gray-container">
           <div className="connect-container">
             <div className="lets-connect">
-              <h2 className="secondary-title">Let&apos;s Connect!</h2>
+              <h2 id="contact" className="secondary-title">Let&apos;s Connect!</h2>
               <p>Want to get in touch? Reach me by emailing me directly, or reaching out to me on LinkedIn.</p>
               <p>Talk soon!</p>
             </div>
             <div className="my-links">
               <h2 className="secondary-title">My Links</h2>
-              <a className="ghostly-button" href="mailto:awmiller1993@gmail.com">awmiller1993@gmail.com</a>
-              <a className="ghostly-button" href="">My Resume</a>
-              <a className="ghostly-button" href="https://www.linkedin.com/in/amiller-design/">LinkedIn</a>
+              <a className="highlighted-button" href="mailto:awmiller1993@gmail.com">awmiller1993@gmail.com</a>
+              <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="">My Resume</a>
+              <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/amiller-design/">LinkedIn</a>
             </div>
           </div>
         </div>
@@ -58,7 +63,7 @@ export default function Home() {
         </div>
       </main>
       <footer className="home-footer">
-        <p>Created in partnership with the lovely <a href="https://www.linkedin.com/in/kiersten-miller-20a292166/">Kiersten Miller</a>. My wife and web developer!</p>
+        <p>Created in partnership with the lovely <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kiersten-miller-20a292166/">Kiersten Miller</a>. My wife and web developer!</p>
         <p>version 1.0 _ 2024</p>
       </footer>
     </div>

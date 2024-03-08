@@ -30,7 +30,7 @@ export default function SleepNumber() {
                 snapshots={[
                     {id: 'services', label: 'Services', content: [{id: 'graphic-design', type: 'pill', message: 'Graphic Design'}, {id: 'web-design', type: 'pill', message: 'Web Design'}, {id: 'production-design', type: 'pill', message: 'Production Design'}, {id: 'ux-ui-strategy', type: 'pill', message: 'UX/UI Strategy'}]},
                     {id: 'tools', label: 'Tools', content: [{id: 'figma', type: 'pill', message: 'Figma'}, {id: 'sketch', type: 'pill', message: 'Sketch'}, {id: 'photoshop', type: 'pill', message: 'Photoshop'}, {id: 'illustrator', type: 'pill', message: 'Illustrator'}, {id: 'indesign', type: 'pill', message: 'InDesign'}, {id: 'after-effects', type: 'pill', message: 'After Effects'}]},
-                    {id: 'date', label: 'Date', content: [{id: 'date', type: 'date', message: '2019-2023'}]}
+                    {id: 'date', label: 'Date', content: [{id: 'date', type: 'date', message: '2019 - 2023'}]}
                 ]}
                 blurbs={[
                     {id: 'intro', message: 'As an in-house graphic designer at Sleep Number, I created digital content for their website’s marketing campaigns and sales events, utilizing Adobe CC and Figma to build a wide array of imagery and web page layouts. Collaborating with a versatile team of creatives ensured that the website always remained beautiful, well maintained, and firmly unified with other creative channels.'}
@@ -146,17 +146,17 @@ export default function SleepNumber() {
                     },
                 ]}
             />
-            <div className="blurb-collection tablet-min-up-only">
-                <div className="blurb">
-                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase ranged from low, medium, and high.</p>
+            <div className="blurb-collection">
+                <div className="blurb tablet-min-up-only">
+                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path-to-purchase journey for those visiting our website and whose intent of purchase ranged from low, medium, and high.</p>
                 </div>
-                <div className="blurb">
-                    <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Number’s mission and bed quiz. <b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customer’s carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
+                <div className="blurb tablet-min-up-only">
+                    <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Number&apos;s mission and bed quiz. <b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customer&apos;s carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                 </div>
             </div>
             <div className="blurb-collection mobile-max-down-only">
                 <div className="blurb">
-                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path to purchase journey for those visiting our website and whose intent of purchase ranged from low, medium, and high.</p>
+                    <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path-to-purchase journey for those visiting our website and whose intent of purchase ranged from low, medium, and high.</p>
                 </div>
             </div>
             <ImageContainer
@@ -167,7 +167,7 @@ export default function SleepNumber() {
             />
             <div className="blurb-collection mobile-max-down-only">
                 <div className="blurb">
-                    <p><b>Low intent</b>(first time) visitors to the website would be introduced Sleep Numbers mission and bed quiz.</p>
+                    <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Number&apos;s mission and bed quiz.</p>
                 </div>
             </div>
             <ImageContainer
@@ -189,7 +189,7 @@ export default function SleepNumber() {
             />
             <div className="blurb-collection mobile-max-down-only">
                 <div className="blurb">
-                    <p><b>High intent</b> (purchasing) customers carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
+                    <p><b>High intent</b> (purchasing) customer&apos;s carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                 </div>
             </div>
             <Image className="tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />

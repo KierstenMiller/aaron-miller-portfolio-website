@@ -5,7 +5,7 @@ import { fullWidth } from "../sleep-number/page";
 
 export default function MedtronicProject() {
     return <ProductPageLayout
-        primaryTitle="Medtronic-Live More"
+        primaryTitle="Medtronic - Live More"
         projectInfo={{
             snapshots: [
                 {id: 'services', label: 'Services', content: [{id: 'web-design', type: 'pill', message: 'Web Design'}, {id: 'advertising', type: 'pill', message: 'Advertising'}, {id: 'signage', type: 'pill', message: 'Signage'}]},

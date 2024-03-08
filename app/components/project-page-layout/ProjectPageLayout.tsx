@@ -33,7 +33,11 @@ export const ProductPageLayout = ({primaryTitle, projectInfo, children}:{ primar
                     <a className="back-to-top" href="#top">Back to The Top</a>
                 </div>
                 <ProjectNav ariaLabel="Primary" />
-            </div>
+                <div className="partnership">
+                    <p>Created in partnership with the lovely <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kiersten-miller-20a292166/">Kiersten Miller</a>. My wife and web developer!</p>
+                    <p>version 1.0 _ 2024</p>
+                </div>
+            </div>   
         </footer>
     </div>
 )}
