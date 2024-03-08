@@ -212,11 +212,13 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: $xx-huge;
+  margin-top: $desktop-spacing * 2;
+  margin-bottom: $desktop-spacing * 2;
 
   @media screen and (max-width: $mobile-max) {
-    grid-template-columns: 1fr;
-    gap: $mobile-gap;
-
+    display: block;
+    margin-top: $desktop-spacing;
+    margin-bottom: $desktop-spacing;
   }
 
   .secondary-title {
@@ -224,7 +226,7 @@ main {
   }
 
   p {
-    margin-bottom: $mobile-gap;
+    margin-top: $mobile-gap;
   }
 
   .inventory-collection {
