@@ -8,8 +8,19 @@
     justify-content: space-between;
 }
 
+.x-home-button {
+    position: fixed;
+    right: $desktop-gutter/3;
+
+    @media screen and (max-width: $mobile-max) {
+        right: $mobile-gutter/3;
+    }
+}
+
 .footer-container {
     // @include restricted-container;
+    position: relative; // to make sure footer is above position: fixed 'X' home button
+    z-index: 100; // to make sure footer is above position: fixed 'X' home button
     padding-top: $desktop-spacing;
     padding-bottom: $desktop-spacing;
     background: $mid-gray;
