@@ -52,7 +52,7 @@ export default function SleepNumber() {
                 />
                 <ImageContainer
                     images={[
-                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Desktop_03.png', width: fullWidth, height: 600, alt: ''},
+                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Desktop_03.png', srcMobile: '/static/images/sleep-number/SN_Mobile_04.png', width: fullWidth, height: 600, alt: ''},
                     ]}
                 />
                 <ImageContainer 

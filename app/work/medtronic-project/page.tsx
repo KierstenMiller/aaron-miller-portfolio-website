@@ -36,12 +36,26 @@ export default function MedtronicProject() {
         />
         <ImageContainer
             images={[
-                {id:'the-future', src: '/static/images/medtronic/Medtronic_Desktop_04.png', width: fullWidth, height: 600, alt: ''},
+                {
+                    id:'the-future',
+                    src: '/static/images/medtronic/Medtronic_Desktop_04.png',
+                    srcMobile: '/static/images/medtronic/Medtronic_Mobile_04.png',
+                    width: fullWidth,
+                    height: 600,
+                    alt: ''
+                },
             ]}
         />
         <ImageContainer
             images={[
-                {id:'the-today', src: '/static/images/medtronic/Medtronic_Desktop_05.png', width: fullWidth, height: 600, alt: ''},
+                {
+                    id:'the-today',
+                    src: '/static/images/medtronic/Medtronic_Desktop_05.png',
+                    srcMobile: '/static/images/medtronic/Medtronic_Mobile_05.png',
+                    width: fullWidth,
+                    height: 600,
+                    alt: ''
+                },
             ]}
         />
         <Image className="bare-image" src="/static/images/medtronic/Medtronic_Desktop_06.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
@@ -51,7 +65,50 @@ export default function MedtronicProject() {
         </div>
         <ImageContainer
             images={[
-                {id:'signage-collection', src: '/static/images/medtronic/Medtronic_Desktop_09.png', width: fullWidth, height: 600, alt: ''},
+                {
+                    id:'signage-collection',
+                    src: '/static/images/medtronic/Medtronic_Desktop_09.png',
+                    srcMobile: '/static/images/medtronic/Medtronic_Mobile_09.png',
+                    width: fullWidth,
+                    height: 600,
+                    alt: ''
+                },
+            ]}
+        />
+        <ImageContainer
+            className="mobile-max-down-only"
+            images={[
+                {
+                    id:'signage-collection',
+                    src: '/static/images/medtronic/Medtronic_Mobile_10.png',
+                    width: fullWidth,
+                    height: 600,
+                    alt: ''
+                },
+            ]}
+        />
+         <ImageContainer
+            className="mobile-max-down-only"
+            images={[
+                {
+                    id:'signage-collection',
+                    src: '/static/images/medtronic/Medtronic_Mobile_11.png',
+                    width: fullWidth,
+                    height: 600,
+                    alt: ''
+                },
+            ]}
+        />
+         <ImageContainer
+            className="mobile-max-down-only"
+            images={[
+                {
+                    id:'signage-collection',
+                    src: '/static/images/medtronic/Medtronic_Mobile_12.png',
+                    width: fullWidth,
+                    height: 600,
+                    alt: ''
+                },
             ]}
         />
     </ProductPageLayout>
