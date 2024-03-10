@@ -94,6 +94,8 @@ main {
 
 .bare-image {
   margin-bottom: $desktop-gap;
+  max-width: 1248px;
+  width: 100%;
 
   @media screen and (max-width: $mobile-max) {
     margin-bottom: $mobile-gap;

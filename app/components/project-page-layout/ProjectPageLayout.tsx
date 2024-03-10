@@ -10,15 +10,18 @@ export const ProductPageLayout = ({primaryTitle, projectInfo, children}:{ primar
         <header id="top">
             <div className={styles['page-heading-container']}>
                 <h1 className="primary-title">{primaryTitle}</h1>
-                <a className={styles['x-home-button']} href="/">
-                    <span className="sr-only">Back to Home</span>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="19.625" fill="#fff" opacity={0.7}/>
-                        <circle cx="20" cy="20" r="19.625" stroke="#636363" stroke-width="0.75"/>
-                        <path d="M10.5884 11.1758L28.5296 29.117" stroke="#636363" stroke-width="0.75" stroke-linejoin="round"/>
-                        <path d="M28.824 11.1758L10.8828 29.117" stroke="#636363" stroke-width="0.75" stroke-linejoin="round"/>
-                    </svg>
-                </a>
+                <div className={styles['x-home-container']}>
+                    <a className={styles['x-home-button']} href="/">
+                        <span className="sr-only">Back to Home</span>
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="19.625" fill="#fff" opacity={0.7}/>
+                            <circle cx="20" cy="20" r="19.625" stroke="#636363" stroke-width="0.75"/>
+                            <path d="M10.5884 11.1758L28.5296 29.117" stroke="#636363" stroke-width="0.75" stroke-linejoin="round"/>
+                            <path d="M28.824 11.1758L10.8828 29.117" stroke="#636363" stroke-width="0.75" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                
             </div>
         </header>
         <main> 

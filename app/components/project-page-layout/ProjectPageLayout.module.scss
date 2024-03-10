@@ -8,13 +8,14 @@
     justify-content: space-between;
 }
 
+.x-home-container {
+    position: relative;
+    min-width: 40px; // (NEEDS TO BE MIN-WIDTH FOR DISPLAY:FLEX CONTEXTS) need width/height of x-icon to be in parent element - since fixed elements are taken out of the flow and no space is created for them in the page layout (MDN Doc)
+    height: 40px; // need width/height of x-icon to be in parent element - since fixed elements are taken out of the flow and no space is created for them in the page layout (MDN Doc)
+}
+
 .x-home-button {
     position: fixed;
-    right: $desktop-gutter/3;
-
-    @media screen and (max-width: $mobile-max) {
-        right: $mobile-gutter/3;
-    }
 }
 
 .footer-container {
