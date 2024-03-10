@@ -57,8 +57,20 @@ export default function Home() {
             <div className={styles['my-links']}>
               <h2 className="secondary-title">My Links</h2>
               <a className="highlighted-button" href="mailto:awmiller1993@gmail.com">awmiller1993@gmail.com</a>
-              <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="">My Resume</a>
-              <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/amiller-design/">LinkedIn</a>
+              <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="">
+                My Resume
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" stroke-width="1.25"/>
+                  <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" stroke-width="1.25"/>
+                </svg>
+              </a>
+              <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/amiller-design/">
+                LinkedIn
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" stroke-width="1.25"/>
+                  <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" stroke-width="1.25"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
