@@ -1,21 +1,25 @@
 "use client";
 
+import classNames from "classnames";
 import Image from "next/image";
-import { Inventory } from "./components/design/ProjectInfo";
+
+import { Inventory } from "./components/design/Inventory";
 import { ProjectNav } from "./components/project-navigation/ProjectNav";
+
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <div>
       <header id="top">
-        <div className="home-header">
+        <div className={styles['home-header']}>
           <h1 className="primary-title mb-24">Aaron Miller</h1>
-          <div className="actions-menu">
+          <div className={styles['actions-menu']}>
             <a className="ghostly-button" href="#profile">Info</a>
             <a className="ghostly-button" href="#contact">Contact</a>
           </div>
         </div>
-        <p className="primary-title header-description mb-24">A digital designer who creates efficient web experiences, beautiful graphic solutions, and experimental typography.</p>
+        <p className={classNames('primary-title', styles['header-description'], 'mb-24')}>A digital designer who creates efficient web experiences, beautiful graphic solutions, and experimental typography.</p>
       </header>
       <main>
         {/* <nav aria-label="Primary" className="work-menu mb-24">
@@ -25,7 +29,7 @@ export default function Home() {
           </ul>
         </nav> */}
         <ProjectNav ariaLabel="Secondary" />
-        <div className="profile">
+        <div className={styles['profile']}>
         <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
             <Image className="tablet-min-up-only" src='/static/images/aaron-profile-pic.jpg' alt="Aaron Miller" width={1920} height={1080} />
@@ -44,13 +48,13 @@ export default function Home() {
           </div> 
         </div>
         <div className="gray-container">
-          <div className="connect-container">
-            <div className="lets-connect">
+          <div className={styles['connect-container']}>
+            <div className={styles['lets-connect']}>
               <h2 id="contact" className="secondary-title">Let&apos;s Connect!</h2>
               <p>Want to get in touch? Reach me by emailing me directly, or reaching out to me on LinkedIn.</p>
               <p>Talk soon!</p>
             </div>
-            <div className="my-links">
+            <div className={styles['my-links']}>
               <h2 className="secondary-title">My Links</h2>
               <a className="highlighted-button" href="mailto:awmiller1993@gmail.com">awmiller1993@gmail.com</a>
               <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="">My Resume</a>
@@ -58,11 +62,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="back-to-top-container">
+        <div className={styles['back-to-top-container']}>
           <a className="ghostly-button" href="#top">Back to The Top</a>
         </div>
       </main>
-      <footer className="home-footer">
+      <footer className={styles['home-footer']}>
         <p>Created in partnership with the lovely <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kiersten-miller-20a292166/">Kiersten Miller</a>. My wife and web developer!</p>
         <p>version 1.0 _ 2024</p>
       </footer>

@@ -1,0 +1,33 @@
+@import '/app/styles/space.scss';
+@import '/app/styles/responsive.scss';
+
+.blurb-collection {
+    p:not(:last-child) {
+        margin-bottom: $mobile-gap;
+    }
+
+    @media screen and (max-width: $tablet-max) {
+        margin-bottom: $mobile-spacing;
+    }
+}
+
+.project-info {
+    @include content-block;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $medium;
+
+    &.desktop {
+        @media screen and (max-width: $tablet-max) {
+            display: none;
+        }
+    }
+
+    &.mobile {
+        display: none;
+
+        @media screen and (max-width: $tablet-max) {
+            display: block;
+        }
+    }
+}

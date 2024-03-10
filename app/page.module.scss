@@ -1,0 +1,139 @@
+@import '/app/styles/text.scss';
+@import '/app/styles/space.scss';
+@import '/app/styles/color.scss';
+@import '/app/styles/responsive.scss';
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+
+    .actions-menu {
+        display: flex;
+        height: fit-content;
+
+        @media screen and (max-width: $mobile-max) {
+            display: none;
+        }
+
+        a {
+            min-width: 100px;
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-right: $medium;
+            }
+        }
+    }
+}
+
+.header-description {
+    color: $base-gray;
+}
+
+.work-menu {
+    ul {
+        display: flex;
+    }
+
+    .main-link {
+        display: inline-block;
+        border: 1px solid $base-gray;
+        border-radius: $small;
+        padding: $x-small $small;
+
+        &:not(:last-child) {
+            margin-right: $small;
+        }
+
+        &.not-work {
+            background: $deep-black;
+            color: white;
+        }
+    }
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: $xx-huge;
+    margin-top: $desktop-spacing * 2;
+    margin-bottom: $desktop-spacing * 2;
+
+    @media screen and (max-width: $mobile-max) {
+        display: block;
+        margin-top: $desktop-spacing;
+        margin-bottom: $desktop-spacing;
+    }
+
+    :global(.secondary-title) {
+        margin-bottom: $desktop-gap;
+    }
+
+    p {
+        margin-top: $mobile-gap;
+    }
+
+    :global(.inventory-collection) {
+        margin-top: $desktop-gap;
+
+        :global(.inventory) {
+            flex-wrap: wrap;
+        }
+
+        :global(.inventory-label) {
+            width: 100%;
+            margin-bottom: $mobile-gap;
+        }
+    }
+}
+
+.connect-container {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $desktop-gap;
+    padding: $desktop-gap;
+    border-radius: 20px;
+
+    @media screen and (max-width: $mobile-max) {
+        display: block;
+        padding: $mobile-gap;
+    }
+
+    :global(.secondary-title) {
+        margin-bottom: $desktop-gap;
+
+        @media screen and (max-width: $mobile-max) {
+            margin-bottom: $mobile-gap;
+        }
+    }
+
+    p {
+        margin-bottom: $mobile-gap;
+    }
+}
+
+.back-to-top-container {
+    display: flex;
+    justify-content: center;
+    margin-top: $desktop-spacing;
+}
+
+.home-footer {
+    @include restricted-container;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $desktop-spacing;
+
+    @media screen and (max-width: $mobile-max) {
+        display: block;
+
+        p:not(:last-child) {
+            margin-bottom: $mobile-gap;
+        }
+    }
+
+    p a {
+        text-decoration: underline;
+    }
+}

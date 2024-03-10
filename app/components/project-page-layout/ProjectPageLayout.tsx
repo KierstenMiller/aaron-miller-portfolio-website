@@ -1,12 +1,14 @@
 import { ProjectInfo, ProjectInfoI } from "app/components/design/ProjectInfo";
 import { ProjectNav } from "app/components/project-navigation/ProjectNav";
 
+import styles from "./ProjectPageLayout.module.scss";
+
 export const fullWidth = 1240;
 
 export const ProductPageLayout = ({primaryTitle, projectInfo, children}:{ primaryTitle: string, projectInfo: ProjectInfoI, children: React.ReactNode;}) => {
     return (<div>
         <header id="top">
-            <div className="page-heading-container">
+            <div className={styles['page-heading-container']}>
                 <h1 className="primary-title">{primaryTitle}</h1>
                 <a href="/">
                     <span className="sr-only">Back to Home</span>
@@ -25,15 +27,15 @@ export const ProductPageLayout = ({primaryTitle, projectInfo, children}:{ primar
             />
             { children }
         </main>
-        <footer className="footer-container">
+        <footer className={styles['footer-container']}>
             <h2 className="sr-only">Footer</h2>
-            <div className="footer">
-                <div className="footer-heading-container">
+            <div className={styles['footer']}>
+                <div className={styles['footer-heading-container']}>
                     <h3 className="secondary-title">Other works</h3>
-                    <a className="back-to-top" href="#top">Back to The Top</a>
+                    <a className={styles['back-to-top']} href="#top">Back to The Top</a>
                 </div>
                 <ProjectNav ariaLabel="Primary" />
-                <div className="partnership">
+                <div className={styles['partnership']}>
                     <p>Created in partnership with the lovely <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kiersten-miller-20a292166/">Kiersten Miller</a>. My wife and web developer!</p>
                     <p>version 1.0 _ 2024</p>
                 </div>

@@ -1,0 +1,31 @@
+$desktop-max: 1440px;
+$desktop-min: 1025px;
+$tablet-max: 1024px;
+$tablet-min: 769px;
+$mobile-max: 768px;
+
+$xxxx-small: 1px;
+$xxx-small: 2px;
+$xx-small: 4px;
+$x-small: 8px;
+$small: 12px;
+$medium: 16px;
+$large: 24px;
+$x-large: 32px;
+$xx-large: 40px;
+$xxx-large: 48px;
+$xxxx-large: 56px;
+$huge: 64px;
+$x-huge: 72px;
+$xx-huge: 80px;
+$xxx-huge: 88px;
+$xxxx-huge: 96px;
+
+$desktop-spacing: $huge; // 64px
+$mobile-spacing: $xx-large; // 40px
+
+$desktop-gap: $xx-large; // 40px
+$mobile-gap: $large; // 24px
+
+$desktop-gutter: $xxxx-huge; // 96px
+$mobile-gutter: $x-large; // 72px

@@ -1,0 +1,45 @@
+@import '/app/styles/space.scss';
+@import '/app/styles/color.scss';
+@import '/app/styles/responsive.scss';
+
+.images-collection {
+    margin-bottom: $desktop-gap;
+
+    @media screen and (max-width: $mobile-max) {
+        margin-bottom: $mobile-gap;
+    }
+
+    &.frames-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $desktop-gap;
+
+        @media screen and (max-width: $mobile-max) {
+            grid-template-columns: 1fr;
+            gap: $mobile-gap;
+        }
+    }
+}
+
+.image-container {
+    background: $light-gray;
+    border-radius: 20px;
+
+    &.padding {
+        padding: $desktop-spacing;
+
+        @media screen and (max-width: $mobile-max) {
+            padding: $mobile-gap;
+        }
+    }
+}
+
+.image-description {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: $desktop-spacing;
+
+    @media screen and (max-width: $mobile-max) {
+        padding-bottom: $mobile-spacing;
+    }
+}

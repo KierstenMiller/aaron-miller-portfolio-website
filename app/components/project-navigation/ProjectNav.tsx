@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
+import styles from "app/components/project-navigation/ProjectNav.module.scss";
+
 export const ProjectNav = ({ariaLabel}: {ariaLabel: string}) => {
   const pathname = usePathname();
   const routes = [
@@ -13,7 +15,7 @@ export const ProjectNav = ({ariaLabel}: {ariaLabel: string}) => {
   ];
   const routesToUse = routes.filter(route => route.href !== pathname);
     return <nav aria-label={ariaLabel}>
-    <ul className="projects-menu">
+    <ul className={styles['projects-menu']}>
       {routesToUse.map(route => <li key={route.href}>
         <a href={route.href}>
           <span className="sr-only">{route.srText}</span>

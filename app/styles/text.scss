@@ -1,0 +1,56 @@
+@import '/app/styles/space.scss';
+@import '/app/styles/color.scss';
+
+$base-font-size: 62.5%; // using percentage here to change browser's base font-size from 16px to 10px, which is easier to think around
+$font-unit: 1rem;
+$text-xx-small: $font-unit;
+$text-x-small: calc(1.2 * $font-unit); // 12px
+$text-small: calc(1.6 * $font-unit); // 16px
+$text-medium: calc(2 * $font-unit); // 20px
+$text-large: calc(3 * $font-unit); // 30px
+$text-x-large: calc(3.6 * $font-unit); // 36px
+$text-xx-large: calc(4.8* $font-unit); // 48px
+
+$font-family: 'Inter', sans-serif;
+
+$text-weight-regular: 400;
+$text-weight-medium: 500;
+$text-weight-semi-bold: 600;
+$text-weight-bold: 700;
+
+$default-line-height: 1.2; // default line-height value for most browsers and most fonts
+
+@mixin body-text {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: $text-small;
+    font-weight: $text-weight-regular;
+    color: $base-gray;
+    line-height: 1.5;
+}
+
+.primary-title {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: $text-xx-large;
+    font-weight: $text-weight-bold;
+    line-height: $default-line-height;
+    color: $deep-black;
+
+    @media screen and (max-width: $mobile-max) {
+        font-size: $text-x-large;
+    }
+}
+
+.secondary-title {
+    font-family: $font-family;
+    font-style: normal;
+    font-size: $text-x-large;
+    font-weight: $text-weight-medium;
+    line-height: $default-line-height;
+    color: $deep-black;
+
+    @media screen and (max-width: $mobile-max) {
+        font-size: $text-large;
+    }
+}

@@ -1,0 +1,16 @@
+@import '/app/styles/space.scss';
+
+.projects-menu {
+    display: grid;
+    gap: $desktop-gap;
+    grid-template-columns: 1fr 1fr;
+    margin-top: $desktop-spacing;
+    margin-bottom: $desktop-spacing;
+
+    @media screen and (max-width: $mobile-max) {
+        gap: $mobile-gap;
+        grid-template-columns: 1fr;
+        margin-top: $mobile-spacing;
+        margin-bottom: $mobile-spacing;
+    }
+}

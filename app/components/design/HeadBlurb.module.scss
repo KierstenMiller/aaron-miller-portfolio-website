@@ -1,0 +1,29 @@
+@import '/app/styles/space.scss';
+@import '/app/styles/responsive.scss';
+
+.head-blurb {
+    @include content-block;
+    display: grid;
+    grid-template-columns: 1fr 2fr; // 2/6
+    gap: $desktop-gap;
+
+    @media screen and (max-width: $tablet-max) {
+        grid-template-columns: 1fr 1fr; // 3/6
+    }
+
+    @media screen and (max-width: $mobile-max) {
+        grid-template-columns: 1fr; // 6/6
+        gap: $mobile-gap;
+        margin-bottom: $mobile-gap;
+    }
+
+    .secondary-title {
+        display: block;
+    }
+
+    .blurbs-container {
+        p:not(:last-child) {
+            margin-bottom: $mobile-gap;
+        }
+    }
+}
