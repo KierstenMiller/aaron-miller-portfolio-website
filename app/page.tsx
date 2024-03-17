@@ -13,13 +13,13 @@ export default function Home() {
     <div>
       <header id="top">
         <div className={styles['home-header']}>
-          <h1 className="primary-title mb-24">Aaron Miller</h1>
+          <h1 className="primary-title">Aaron Miller</h1>
           <div className={styles['actions-menu']}>
             <a className="ghostly-button" href="#profile">Info</a>
             <a className="ghostly-button" href="#contact">Contact</a>
           </div>
         </div>
-        <p className={classNames('primary-title', styles['header-description'], 'mb-24')}>A digital designer who creates efficient web experiences, beautiful graphic solutions, and experimental typography.</p>
+        <p className={classNames(styles['header-description'])}>A digital designer who builds efficient web experiences, creates beautiful graphic solutions, and practices iterative, empathetic, and collaborative design.</p>
       </header>
       <main>
         {/* <nav aria-label="Primary" className="work-menu mb-24">
@@ -37,9 +37,10 @@ export default function Home() {
           </div>
           <div>
             <h2 id="profile" className="secondary-title tablet-min-up-only">Hi, I&apos;m Aaron!</h2>
-            <p>I am a digital designer who loves creating clean user experiences for web experiences while also specializing in the design of graphics, print, and typography.</p>
-            <p>I earned my Bachelor of Graphic Design from the Minneapolis College of Art and Design in 2018 and have worked design internships at HCL Technologies and space150. Most recently I was a Graphic Designer for Sleep Number’s web team.</p>
-            <p>Currently lives in Minneapolis with his wife, two cats, and puppy.</p>
+            <p>I am a digital designer who loves creating clean web and branding experiences. I also specialize in the design of graphics, print, and typography.</p>
+            <p>As a designer, I have experience working with creative partners that range from directors, project leads, copywriters, front-end developers, and fellow designers to create products that function seamlessly and look beautiful. I implement my designs using Adobe applications and have been building web and app designs in Sketch and Figma since 2018.</p>
+            <p>I earned my Bachelor&apos;s of Graphic Design from the Minneapolis College of Art and Design in 2018. I have enjoyed working in multiple creative roles in a diverse array of studios and companies, including HCL Technologies, space150, and Sleep Number.</p>
+            <p>Currently living in Minneapolis with his wife, two cats, and puppy.</p>
             <Inventory snapshots={[
                 {id: 'services', label: 'Services', content: [{id: 'graphic-design', type: 'pill', message: 'Graphic Design'}, {id: 'web-design', type: 'pill', message: 'Web Design'}, {id: 'Production Design', type: 'pill', message: 'Production Design'}, {id: 'ux-ui-strategy', type: 'pill', message: 'UX/UI Strategy'}, {id: 'advertising', type: 'pill', message: 'Advertising'}, {id: 'signage', type: 'pill', message: 'Signage'}, {id: 'illustration', type: 'pill', message: 'Illustration'}, {id: 'web-animation', type: 'pill', message: 'Web Animation'}, {id: 'font-design', type: 'pill', message: 'Font Design'}, {id: 'book-layout', type: 'pill', message: 'Book Layout'}]},
                 {id: 'tools', label: 'Tools', content: [{id: 'figma', type: 'pill', message: 'Figma'}, {id: 'sketch', type: 'pill', message: 'Sketch'}, {id: 'photoshop', type: 'pill', message: 'Photoshop'}, {id: 'illustrator', type: 'pill', message: 'Illustrator'}, {id: 'indesign', type: 'pill', message: 'InDesign'}, {id: 'after-effects', type: 'pill', message: 'After Effects'}, {id: 'html', type: 'pill', message: 'HTML'}, {id: 'css', type: 'pill', message: 'CSS'}, {id: 'javascript', type: 'pill', message: 'Javascript'}]},
@@ -47,7 +48,7 @@ export default function Home() {
             />
           </div> 
         </div>
-        <div className="gray-container">
+        <div className={styles['gray-container']}>
           <div className={styles['connect-container']}>
             <div className={styles['lets-connect']}>
               <h2 id="contact" className="secondary-title">Let&apos;s Connect!</h2>

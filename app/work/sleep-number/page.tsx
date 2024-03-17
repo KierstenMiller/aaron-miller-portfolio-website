@@ -25,8 +25,8 @@ export default function SleepNumber() {
             }}
         >
             <div>
-                <Image className="tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
-                <Image className="mobile-max-down-only" src="/static/images/sleep-number/SN_Mobile_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
+                <Image className="bare-image tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
+                <Image className="bare-image mobile-max-down-only" src="/static/images/sleep-number/SN_Mobile_01.jpg" width={fullWidth} height={1025} alt="digital rendering of a sleep number bed" />
                 <HeadBlurb
                     heading={<>Styling an ever-changing website</>}
                     blurbs={[
@@ -181,8 +181,8 @@ export default function SleepNumber() {
                         <p><b>High intent</b> (purchasing) customer&apos;s carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                     </div>
                 </div>
-                <Image className="tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
-                <Image className="mobile-max-down-only" src="/static/images/sleep-number/SN_Mobile_16.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+                <Image className="bare-image tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+                <Image className="bare-image mobile-max-down-only" src="/static/images/sleep-number/SN_Mobile_16.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
             </div>
         </ProductPageLayout>
     )

@@ -13,8 +13,8 @@ export default function MedtronicProject() {
                 {id: 'date', label: 'Date', content: [{id: 'date', type: 'date', message: '2019'}]}
             ],
             blurbs: [
-                {id: 'while-interning', message: 'While interning at space150, I was tasked with working on web design and promotional material for their client Medtronic. The company was releasing a new line of products that assists the monitoring of health information for those with diabetes so they could focus on the things they love doing.'},
-                {id: 'throughout-the-project', message: 'Throughout the project I worked across multiple programs to create web layouts and advertisements that promoted Medtronic’s product campaign.'},
+                {id: 'blurb-1', message: 'During my internship at space150, I had the opportunity to work with their client Medtronic, who had recently asked our team to produce web content and advertisements for their latest product campaign.'},
+                {id: 'blurb-2', message: 'During it’s run, the campaign featured Medtronic’s newest devices that monitor insulin levels for those with diabetes, helping them achieve their health and life goals. My contribution to the project was designing two new webpages that showcased the new products, and signage to help generate greater campaign awareness.'},
             ]
         }}
     >

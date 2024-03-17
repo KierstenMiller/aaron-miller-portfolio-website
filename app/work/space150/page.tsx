@@ -12,8 +12,8 @@ export default function Space150() {
                 {id: 'date', label: 'Date', content: [{id: 'date', type: 'date', message: '2019'}]}
             ],
             blurbs: [
-                {id: 'space150-is-an', message: 'space150 is an agency that has the unique goal of rebranding their website every 150 days. During my summer there as graphic design intern I was brought aboard the team overseeing the company’s current rebrand to assist with website design/animation.'},
-                {id: 'i-partnered-with', message: 'I partnered with the creative director to implement a new brand style to the website and worked with developers to craft fine-tuned web animations for the site. I also managed the transferring of project case-studies to a new CMS.'},
+                {id: 'blurb-1', message: 'space150 is an agency that has the unique goal of rebranding their website every 150 days. During my summer there as a graphic design intern I was brought aboard the team overseeing the company\'s current rebrand to assist with website design/animation.'},
+                {id: 'blurb-2', message: 'I partnered with the creative director to implement a new brand style to the website and worked with front-end developers to craft fine-tuned web animations for the site. I also managed the transferring of project case studies to a new CMS.'},
             ]
         }}
     >
