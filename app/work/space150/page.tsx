@@ -46,7 +46,7 @@ export default function Space150() {
             images={[
                 {
                     id:'animation-4', 
-                    src: '/static/images/space150/space150_Desktop_04.gif',
+                    src: '/static/images/spa        ce150/space150_Desktop_04.gif',
                      width: fullWidth, 
                      height: 600, 
                      alt: 'Video capture of user going through project carousel of space150 website'

@@ -24,7 +24,7 @@
     z-index: 100; // to make sure footer is above position: fixed 'X' home button
     padding-top: $desktop-spacing;
     padding-bottom: $desktop-spacing;
-    background: $mid-gray;
+    background: $semi-gray;
 
     @media screen and (max-width: $mobile-max) {
         padding-top: $mobile-spacing;
