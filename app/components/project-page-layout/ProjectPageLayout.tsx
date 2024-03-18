@@ -32,10 +32,9 @@ export const ProductPageLayout = ({primaryTitle, projectInfo, children}:{ primar
             { children }
         </main>
         <footer className={styles['footer-container']}>
-            <h2 className="sr-only">Footer</h2>
             <div className={styles['footer']}>
                 <div className={styles['footer-heading-container']}>
-                    <h3 className="secondary-title">Other works</h3>
+                    <h2 className="secondary-title">Other works</h2>
                     <a className={styles['back-to-top']} href="#top">Back to The Top</a>
                 </div>
                 <ProjectNav ariaLabel="Primary" />

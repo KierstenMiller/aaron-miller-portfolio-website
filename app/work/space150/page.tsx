@@ -20,25 +20,49 @@ export default function Space150() {
          <ImageContainer
             applyPadding={true}
             images={[
-                {id:'animation-1', src: '/static/images/space150/space150_Desktop_01.gif', width: fullWidth, height: 600, alt: ''},
+                {
+                    id:'animation-1', 
+                    src: '/static/images/space150/space150_Desktop_01.gif', 
+                    width: fullWidth, 
+                    height: 600, 
+                    alt: 'Video capture of user scrolling through the space150 website'
+                },
             ]}
         />
         <ImageContainer
             applyPadding={true}
             images={[
-                {id:'animation-2', src: '/static/images/space150/space150_Desktop_02.gif', width: fullWidth, height: 600, alt: ''},
+                {
+                    id:'animation-2', 
+                    src: '/static/images/space150/space150_Desktop_02.gif', 
+                    width: fullWidth, 
+                    height: 600, 
+                    alt: 'Video capture of user opening up navigation menu of space150 website'
+                },
             ]}
         /> 
         <ImageContainer
             applyPadding={true}
             images={[
-                {id:'animation-4', src: '/static/images/space150/space150_Desktop_04.gif', width: fullWidth, height: 600, alt: ''},
+                {
+                    id:'animation-4', 
+                    src: '/static/images/space150/space150_Desktop_04.gif',
+                     width: fullWidth, 
+                     height: 600, 
+                     alt: 'Video capture of user going through project carousel of space150 website'
+                },
             ]}
         />
         <ImageContainer
             applyPadding={true}
             images={[
-                {id:'animation-3', src: '/static/images/space150/space150_Desktop_03.gif', width: fullWidth, height: 600, alt: ''},
+                {
+                    id:'animation-3', 
+                    src: '/static/images/space150/space150_Desktop_03.gif', 
+                    width: fullWidth, 
+                    height: 600, 
+                    alt: 'Video capture of user scrolling throught the space150 about web page'
+                },
             ]}
         />   
     </ProductPageLayout>

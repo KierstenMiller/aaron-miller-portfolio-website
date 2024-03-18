@@ -32,8 +32,8 @@ export default function Home() {
         <div className={styles['profile']}>
         <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
-            <Image className="tablet-min-up-only" src='/static/images/aaron-profile-pic.jpg' alt="Aaron Miller" width={1920} height={1080} />
-            <Image className="mobile-max-down-only" src='/static/images/aaron-profile-pic_mobile.jpg' alt="Aaron Miller" width={1920} height={1080} />
+            <Image className="tablet-min-up-only" src='/static/images/aaron-profile-pic.jpg' alt="Aaron Miller headshot" width={1920} height={1080} />
+            <Image className="mobile-max-down-only" src='/static/images/aaron-profile-pic_mobile.jpg' alt="Aaron Miller headshot" width={1920} height={1080} />
           </div>
           <div>
             <h2 id="profile" className="secondary-title tablet-min-up-only">Hi, I&apos;m Aaron!</h2>
@@ -61,6 +61,7 @@ export default function Home() {
               <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="/static/files/Aaron_Miller_Resume.pdf">
                 My Resume
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <title>Opens new tab</title>
                   <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" stroke-width="1.25"/>
                   <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" stroke-width="1.25"/>
                 </svg>
@@ -68,6 +69,7 @@ export default function Home() {
               <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/amiller-design/">
                 LinkedIn
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <title>Opens new tab</title>
                   <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" stroke-width="1.25"/>
                   <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" stroke-width="1.25"/>
                 </svg>

@@ -40,25 +40,52 @@ export default function SleepNumber() {
                             id:'desktop-2',
                             src: '/static/images/sleep-number/SN_Desktop_02.png',
                             srcMobile: '/static/images/sleep-number/SN_Mobile_02.png',
-                            width: fullWidth, height: 600, alt: ''
+                            alt: 'compilation of screenshots of the sleep number website',
+                            width: fullWidth,
+                            height: 600,
                         },
                     ]}
                 />
                 <ImageContainer
                     className="mobile-max-down-only"
                     images={[
-                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_03.png', width: fullWidth, height: 600, alt: ''},
+                        {
+                            id:'desktop-3', 
+                            src: '/static/images/sleep-number/SN_Mobile_03.png', 
+                            width: fullWidth,
+                            height: 600,
+                            alt: 'Another compilation of screenshots of the sleep number website from a different sales event'
+                        },
                     ]}
                 />
                 <ImageContainer
                     images={[
-                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Desktop_03.png', srcMobile: '/static/images/sleep-number/SN_Mobile_04.png', width: fullWidth, height: 600, alt: ''},
+                        {
+                            id:'desktop-3', 
+                            src: '/static/images/sleep-number/SN_Desktop_03.png', 
+                            srcMobile: '/static/images/sleep-number/SN_Mobile_04.png', 
+                            width: fullWidth, 
+                            height: 600, 
+                            alt: 'two different banners from the sleep number website, one to promot their smart beds and one for a holiday event'
+                        },
                     ]}
                 />
                 <ImageContainer 
                     images={[
-                        {id:'desktop-4', src: '/static/images/sleep-number/SN_Desktop_04.png', width: fullWidth, height: 310, alt: ''},
-                        {id:'desktop-5', src: '/static/images/sleep-number/SN_Desktop_05.png', width: fullWidth, height: 310, alt: ''}
+                        {
+                            id:'desktop-4',
+                            src: '/static/images/sleep-number/SN_Desktop_04.png',
+                            width: fullWidth,
+                            height: 310,
+                            alt: 'Various visual treatments to Sleep Number\'s mobile call to action content cards'
+                        },
+                        {
+                            id:'desktop-5', 
+                            src: '/static/images/sleep-number/SN_Desktop_05.png', 
+                            width: fullWidth, 
+                            height: 310, 
+                            alt: 'Various visual treatments to Sleep Number\'s desktop call to action content cards'
+                        }
                     ]}
                 />
                 <HeadBlurb
@@ -76,14 +103,20 @@ export default function SleepNumber() {
                             srcMobile: '/static/images/sleep-number/SN_Mobile_07.png',
                             width: fullWidth,
                             height: 600,
-                            alt: ''
+                            alt: 'Wireframe of final design of a sleep number website page'
                         },
                     ]}
                 />
                 <ImageContainer
                     className="mobile-max-down-only"
                     images={[
-                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_08.png', width: fullWidth, height: 600, alt: ''},
+                        {
+                            id:'desktop-3', 
+                            src: '/static/images/sleep-number/SN_Mobile_08.png', 
+                            width: fullWidth, 
+                            height: 600, 
+                            alt: 'Complete final design displayed as wireframe previously above this image'
+                        },
                     ]}
                 />
                 <ImageContainer 
@@ -94,14 +127,20 @@ export default function SleepNumber() {
                             srcMobile: '/static/images/sleep-number/SN_Mobile_09.png',
                             width: fullWidth,
                             height: 600,
-                            alt: ''
+                            alt: 'Compilation of sleep number\'s and the N.F.L\'s collaboration on the sleep number website'
                         },
                     ]}
                 />
                 <ImageContainer
                     className="mobile-max-down-only"
                     images={[
-                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_10.png', width: fullWidth, height: 600, alt: ''},
+                        {
+                            id:'desktop-3', 
+                            src: '/static/images/sleep-number/SN_Mobile_10.png', 
+                            width: fullWidth, 
+                            height: 600, 
+                            alt: 'Desktop and mobile versions of Sleep Number\'s Ideal Temp promotional website page'
+                        },
                     ]}
                 />
                 <HeadBlurb
@@ -114,8 +153,22 @@ export default function SleepNumber() {
                 />
                 <ImageContainer 
                     images={[
-                        {id:'desktop-8', src: '/static/images/sleep-number/SN_Desktop_08.png', description: "April 2023 - Sales Page", width: fullWidth, height: 1205, alt: ''},
-                        {id:'desktop-9', src: '/static/images/sleep-number/SN_Desktop_09.png', description: "June 2023 - Sales Page", width: fullWidth, height: 930, alt: ''},
+                        {
+                            id:'desktop-8', 
+                            src: '/static/images/sleep-number/SN_Desktop_08.png', 
+                            description: "April 2023 - Sales Page", 
+                            width: fullWidth, 
+                            height: 1205, 
+                            alt: 'Screenshot of April 2023 sales page for Sleep Number'
+                        },
+                        {
+                            id:'desktop-9', 
+                            src: '/static/images/sleep-number/SN_Desktop_09.png', 
+                            description: "June 2023 - Sales Page", 
+                            width: fullWidth, 
+                            height: 930, 
+                            alt: 'Sreenshot of June 2023 sales page for Sleep Number'
+                        },
                     ]}
                 />
                 <ImageContainer 
@@ -126,7 +179,7 @@ export default function SleepNumber() {
                             src: '/static/images/sleep-number/SN_Desktop_10.png',
                             width: fullWidth,
                             height: 600,
-                            alt: '',
+                            alt: '3 screenshots of the same promotional page for Sleep Number\'s smart beds',
                             description: <>
                                 <span>Low intent of purchase</span>
                                 <span>Medium intent of purchase</span>
@@ -151,7 +204,13 @@ export default function SleepNumber() {
                 <ImageContainer
                     className="mobile-max-down-only"
                     images={[
-                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_13.png', width: fullWidth, height: 600, alt: ''},
+                        {
+                            id:'desktop-3', 
+                            src: '/static/images/sleep-number/SN_Mobile_13.png', 
+                            width: fullWidth, 
+                            height: 600, 
+                            alt: 'Screenshot of the low intent of purchase version of a Sleep Number promotion'
+                        },
                     ]}
                 />
                 <div className="blurb-collection mobile-max-down-only">
@@ -162,7 +221,13 @@ export default function SleepNumber() {
                 <ImageContainer
                     className="mobile-max-down-only"
                     images={[
-                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_14.png', width: fullWidth, height: 600, alt: ''},
+                        {
+                            id:'desktop-3', 
+                            src: '/static/images/sleep-number/SN_Mobile_14.png', 
+                            width: fullWidth, 
+                            height: 600, 
+                            alt: 'Screenshot of the medium intent of purchase version of a Sleep Number promotion'
+                        },
                     ]}
                 />
                 <div className="blurb-collection mobile-max-down-only">
@@ -173,7 +238,13 @@ export default function SleepNumber() {
                 <ImageContainer
                     className="mobile-max-down-only"
                     images={[
-                        {id:'desktop-3', src: '/static/images/sleep-number/SN_Mobile_15.png', width: fullWidth, height: 600, alt: ''},
+                        {
+                            id:'desktop-3', 
+                            src: '/static/images/sleep-number/SN_Mobile_15.png', 
+                            width: fullWidth, 
+                            height: 600, 
+                            alt: 'Screenshot of the high intent of purchase version of a Sleep Number promotion'
+                        },
                     ]}
                 />
                 <div className="blurb-collection mobile-max-down-only">
@@ -181,8 +252,19 @@ export default function SleepNumber() {
                         <p><b>High intent</b> (purchasing) customer&apos;s carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                     </div>
                 </div>
-                <Image className="bare-image tablet-min-up-only" src="/static/images/sleep-number/SN_Desktop_11.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
-                <Image className="bare-image mobile-max-down-only" src="/static/images/sleep-number/SN_Mobile_16.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+                <Image 
+                    className="bare-image tablet-min-up-only" 
+                    src="/static/images/sleep-number/SN_Desktop_11.jpg" 
+                    width={fullWidth} 
+                    height={400} 
+                    alt="digital rendering of a sleep number bed"
+                />
+                <Image 
+                    className="bare-image mobile-max-down-only"
+                    src="/static/images/sleep-number/SN_Mobile_16.jpg"
+                    width={fullWidth} height={400}
+                    alt="digital rendering of a sleep number bed"
+                />
             </div>
         </ProductPageLayout>
     )

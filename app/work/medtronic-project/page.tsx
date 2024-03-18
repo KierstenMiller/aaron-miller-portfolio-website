@@ -24,14 +24,28 @@ export default function MedtronicProject() {
                     id:'medtronic-top-display',
                     src: '/static/images/medtronic/Medtronic_Dekstop_01.png',
                     srcMobile: '/static/images/medtronic/Medtronic_Mobile_01.png',
-                    width: fullWidth, height: 600, alt: ''
+                    width: fullWidth, 
+                    height: 600, 
+                    alt: 'Compilation of Medtronic screens for desktop and mobile'
                 },
             ]}
         />
         <ImageContainer 
             images={[
-                {id:'medtronic-laptop', src: '/static/images/medtronic/Medtronic_Desktop_02.png', width: fullWidth, height: 310, alt: ''},
-                {id:'medtronic-phone', src: '/static/images/medtronic/Medtronic_Desktop_03.png', width: fullWidth, height: 310, alt: ''}
+                {
+                    id:'medtronic-laptop', 
+                    src: '/static/images/medtronic/Medtronic_Desktop_02.png', 
+                    width: fullWidth, 
+                    height: 310, 
+                    alt: 'desktop version of medtronic site'
+                },
+                {
+                    id:'medtronic-phone', 
+                    src: '/static/images/medtronic/Medtronic_Desktop_03.png',
+                     width: fullWidth, 
+                     height: 310, 
+                     alt: 'mobile version of medtronic site'
+                }
             ]}
         />
         <ImageContainer
@@ -42,7 +56,7 @@ export default function MedtronicProject() {
                     srcMobile: '/static/images/medtronic/Medtronic_Mobile_04.png',
                     width: fullWidth,
                     height: 600,
-                    alt: ''
+                    alt: 'Expanded detail shots of the Medtronic web page for "The future of diabetes care"'
                 },
             ]}
         />
@@ -54,14 +68,29 @@ export default function MedtronicProject() {
                     srcMobile: '/static/images/medtronic/Medtronic_Mobile_05.png',
                     width: fullWidth,
                     height: 600,
-                    alt: ''
+                    alt: 'Expanded detail shots of the Medtronic web page for "The today of diabetes care"'
                 },
             ]}
         />
-        <Image className="bare-image" src="/static/images/medtronic/Medtronic_Desktop_06.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+        <Image 
+            className="bare-image" 
+            src="/static/images/medtronic/Medtronic_Desktop_06.jpg" 
+            width={fullWidth} 
+            height={400} 
+            alt="All promotional banners displayed in a real life setting"
+        />
         <div className="bare-images-collection">
-            <Image src="/static/images/medtronic/Medtronic_Desktop_07.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
-            <Image src="/static/images/medtronic/Medtronic_Desktop_08.jpg" width={fullWidth} height={400} alt="digital rendering of a sleep number bed" />
+            <Image 
+                src="/static/images/medtronic/Medtronic_Desktop_07.jpg" 
+                width={fullWidth} 
+                height={400} 
+                alt="Live More Worry Less promotional image displayed in a real life setting"
+            />
+            <Image 
+                src="/static/images/medtronic/Medtronic_Desktop_08.jpg"
+                width={fullWidth}
+                height={400}
+                alt="Live More promotional image displayed in real life setting" />
         </div>
         <ImageContainer
             images={[
@@ -71,7 +100,7 @@ export default function MedtronicProject() {
                     srcMobile: '/static/images/medtronic/Medtronic_Mobile_09.png',
                     width: fullWidth,
                     height: 600,
-                    alt: ''
+                    alt: 'Promotional signage isolated'
                 },
             ]}
         />
@@ -83,7 +112,7 @@ export default function MedtronicProject() {
                     src: '/static/images/medtronic/Medtronic_Mobile_10.png',
                     width: fullWidth,
                     height: 600,
-                    alt: ''
+                    alt: 'Promotional signage isolated for second promotion'
                 },
             ]}
         />
@@ -95,7 +124,7 @@ export default function MedtronicProject() {
                     src: '/static/images/medtronic/Medtronic_Mobile_11.png',
                     width: fullWidth,
                     height: 600,
-                    alt: ''
+                    alt: 'Promotional signage isolated for third promotion'
                 },
             ]}
         />
@@ -107,7 +136,7 @@ export default function MedtronicProject() {
                     src: '/static/images/medtronic/Medtronic_Mobile_12.png',
                     width: fullWidth,
                     height: 600,
-                    alt: ''
+                    alt: 'Promotional signage isolated for fourth promotion'
                 },
             ]}
         />
