@@ -1,5 +1,5 @@
-import { ImageContainer } from "app/components/design/ImageContainer";
 import { ProductPageLayout } from "app/components/project-page-layout/ProjectPageLayout";
+import Image from "next/image";
 import { fullWidth } from "../sleep-number/page";
 
 export default function Space150() {
@@ -17,53 +17,37 @@ export default function Space150() {
             ]
         }}
     >
-         <ImageContainer
-            className="shadowed-content"
-            images={[
-                {
-                    id:'animation-1', 
-                    src: '/static/images/space150/space150_Desktop_01.gif', 
-                    width: fullWidth, 
-                    height: 600, 
-                    alt: 'Video capture of user scrolling through the space150 website'
-                },
-            ]}
+         <Image
+            className="full-vid"
+            id ='animation-1' 
+            src ='/static/images/space150/space150_Desktop_01.gif'
+            width = {fullWidth}
+            height = {600}
+            alt = 'Video capture of user scrolling through the space150 website'
         />
-        <ImageContainer
-            className="shadowed-content"
-            images={[
-                {
-                    id:'animation-2', 
-                    src: '/static/images/space150/space150_Desktop_02.gif', 
-                    width: fullWidth, 
-                    height: 600, 
-                    alt: 'Video capture of user opening up navigation menu of space150 website'
-                },
-            ]}
+        <Image
+            className="full-vid"
+            id ='animation-2' 
+            src ='/static/images/space150/space150_Desktop_02.gif'
+            width = {fullWidth}
+            height = {600}
+            alt = 'Video capture of user opening up navigation menu of space150 website'
         /> 
-        <ImageContainer
-            className="shadowed-content"
-            images={[
-                {
-                    id:'animation-4', 
-                    src: '/static/images/space150/space150_Desktop_04.gif',
-                     width: fullWidth, 
-                     height: 600, 
-                     alt: 'Video capture of user going through project carousel of space150 website'
-                },
-            ]}
+        <Image
+            className="full-vid"
+            id ='animation-3' 
+            src ='/static/images/space150/space150_Desktop_04.gif'
+            width = {fullWidth}
+            height = {600}
+            alt = 'Video capture of user going through project carousel of space150 website'
         />
-        <ImageContainer
-            className="shadowed-content"
-            images={[
-                {
-                    id:'animation-3', 
-                    src: '/static/images/space150/space150_Desktop_03.gif', 
-                    width: fullWidth, 
-                    height: 600, 
-                    alt: 'Video capture of user scrolling throught the space150 about web page'
-                },
-            ]}
+        <Image
+            className="full-vid"
+            id ='animation-4' 
+            src ='/static/images/space150/space150_Desktop_03.gif'
+            width = {fullWidth}
+            height = {600}
+            alt = 'Video capture of user scrolling throught the space150 about web page'
         />   
     </ProductPageLayout>
 }
