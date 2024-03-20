@@ -18,7 +18,7 @@ export default function Space150() {
         }}
     >
          <ImageContainer
-            applyPadding={true}
+            className="shadowed-content"
             images={[
                 {
                     id:'animation-1', 
@@ -30,7 +30,7 @@ export default function Space150() {
             ]}
         />
         <ImageContainer
-            applyPadding={true}
+            className="shadowed-content"
             images={[
                 {
                     id:'animation-2', 
@@ -42,7 +42,7 @@ export default function Space150() {
             ]}
         /> 
         <ImageContainer
-            applyPadding={true}
+            className="shadowed-content"
             images={[
                 {
                     id:'animation-4', 
@@ -54,7 +54,7 @@ export default function Space150() {
             ]}
         />
         <ImageContainer
-            applyPadding={true}
+            className="shadowed-content"
             images={[
                 {
                     id:'animation-3', 
