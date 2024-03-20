@@ -112,14 +112,10 @@
 }
 
 .gray-container {
-    background: $light-gray;
-    padding: $desktop-gap;
-    border-radius: 20px;
     margin-top: $desktop-gutter;
 
     @media screen and (max-width: $mobile-max) {
         margin-top: $mobile-gutter;
-        padding: $mobile-gap;
     }
 }
 
@@ -129,6 +125,7 @@
     grid-template-columns: 1fr 1fr;
     gap: $desktop-gap;
     padding: $desktop-gap;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
 
     @media screen and (max-width: $mobile-max) {
