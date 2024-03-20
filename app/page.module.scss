@@ -42,6 +42,10 @@
         color: $base-gray;
         font-weight: $text-weight-bold;
     }
+
+    @media screen and (max-width: $mini-max) {
+        font-size: $text-medium;
+    }
 }
 
 .work-menu {

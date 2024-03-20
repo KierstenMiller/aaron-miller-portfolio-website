@@ -3,6 +3,8 @@ $desktop-min: 1025px;
 $tablet-max: 1024px;
 $tablet-min: 769px;
 $mobile-max: 768px;
+$mobile-min: 370px;
+$mini-max: 369px;
 
 $xxxx-small: 1px;
 $xxx-small: 2px;
@@ -29,3 +31,4 @@ $mobile-gap: $large; // 24px
 
 $desktop-gutter: $xxxx-huge; // 96px
 $mobile-gutter: $x-large; // 72px
+$mini-gutter: $large; // 24px

@@ -188,15 +188,15 @@ export default function SleepNumber() {
                         },
                     ]}
                 />
-                <div className="blurb-collection">
-                    <div className="blurb tablet-min-up-only">
+                <div className="blurb-collection intent-blurbs hide-mobile-max-down">
+                    <div className="blurb">
                         <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path-to-purchase journey for those visiting our website and whose intent of purchase ranged from low, medium, and high.</p>
                     </div>
-                    <div className="blurb tablet-min-up-only">
+                    <div className="blurb">
                         <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Number&apos;s mission and bed quiz. <b>Medium intent</b> (returning customers) were offered further insight into which smart bed was best for them. <b>High intent</b> (purchasing) customer&apos;s carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                     </div>
                 </div>
-                <div className="blurb-collection mobile-max-down-only">
+                <div className="blurb-collection intent-blurbs mobile-break hide-tablet-min-up">
                     <div className="blurb">
                         <p>A major goal for Sleep Number is to be able to give customers a shopping experience that is tailored to their individual needs as mattress shoppers. By partnering with marketing and research teams, I helped create a path-to-purchase journey for those visiting our website and whose intent of purchase ranged from low, medium, and high.</p>
                     </div>
@@ -213,7 +213,7 @@ export default function SleepNumber() {
                         },
                     ]}
                 />
-                <div className="blurb-collection mobile-max-down-only">
+                <div className="blurb-collection intent-blurbs mobile-max-down-only">
                     <div className="blurb">
                         <p><b>Low intent</b> (first time) visitors to the website would be introduced Sleep Number&apos;s mission and bed quiz.</p>
                     </div>
@@ -230,7 +230,7 @@ export default function SleepNumber() {
                         },
                     ]}
                 />
-                <div className="blurb-collection mobile-max-down-only">
+                <div className="blurb-collection intent-blurbs mobile-max-down-only">
                     <div className="blurb">
                         <p><b>Medium intent</b> (return customers) were offered further insight into which smart bed was best for them.</p>
                     </div>
@@ -247,20 +247,20 @@ export default function SleepNumber() {
                         },
                     ]}
                 />
-                <div className="blurb-collection mobile-max-down-only">
+                <div className="blurb-collection intent-blurbs mobile-max-down-only">
                     <div className="blurb">
                         <p><b>High intent</b> (purchasing) customer&apos;s carts would be remembered and additional financing options would be offerred to encourage ease of purchase.</p>
                     </div>
                 </div>
                 <Image 
-                    className="bare-image tablet-min-up-only" 
+                    className="bare-image last tablet-min-up-only" 
                     src="/static/images/sleep-number/SN_Desktop_11.jpg" 
                     width={fullWidth} 
                     height={400} 
                     alt="digital rendering of a sleep number bed"
                 />
                 <Image 
-                    className="bare-image mobile-max-down-only"
+                    className="bare-image last mobile-max-down-only"
                     src="/static/images/sleep-number/SN_Mobile_16.jpg"
                     width={fullWidth} height={400}
                     alt="digital rendering of a sleep number bed"

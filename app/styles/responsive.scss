@@ -8,6 +8,11 @@
         padding-left: $mobile-gutter;
         padding-right: $mobile-gutter;
     }
+
+    @media screen and (max-width: $mini-max) {
+        padding-left: $mini-gutter;
+        padding-right: $mini-gutter;
+    }
 }
 
 @mixin content-block {
@@ -36,4 +41,28 @@
         display: block !important;
     }
 
+}
+
+.hide-mobile-max-down {
+    @media screen and (max-width: $mobile-max) {
+        display: none !important;
+    }
+}
+
+.hide-tablet-max-down {
+    @media screen and (max-width: $tablet-max) {
+        display: none !important;
+    }
+}
+
+.hide-desktop-max-down {
+    @media screen and (max-width: $desktop-max) {
+        display: none !important;
+    }
+}
+
+.hide-tablet-min-up {
+    @media screen and (min-width: $tablet-min) {
+        display: none !important;
+    }
 }

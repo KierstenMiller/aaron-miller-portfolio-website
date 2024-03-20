@@ -18,6 +18,10 @@ $pill-height: calc(3 * $font-unit); // 30px with border (making width relative t
 .inventory {
     display: flex;
 
+    @media screen and (max-width: $mini-max) {
+        flex-direction: column;
+    }
+
     &:not(:last-child) {
         margin-bottom: $medium;
     }
@@ -32,6 +36,10 @@ $pill-height: calc(3 * $font-unit); // 30px with border (making width relative t
     }
 
     .inventory-content {
+        @media screen and (max-width: $mini-max) {
+            margin-top: $x-small;
+        }
+
         .pill {
             // same on mobile and desktop
             @include pill-aligned-formatting;

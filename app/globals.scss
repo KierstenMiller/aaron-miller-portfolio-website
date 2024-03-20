@@ -10,11 +10,19 @@
 html {
   background: white;
   font-size: $base-font-size;
+
+  // @media screen and (max-width: $mini-max) {
+  //   font-size: $mini-font-size;
+  // }
 }
 
 body,
 p {
-  @include body-text
+  @include body-text;
+
+  @media screen and (max-width: $mini-max) {
+    word-break: break-word;
+  }
 }
 
 header {
@@ -60,10 +68,17 @@ main {
 }
 
 .blurb-collection {
-  @include content-block;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: $xx-large;
+  gap: $desktop-gap;
+
+  &.mobile-break {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: $mobile-max) {
+    gap: $mobile-gap;
+  }
 }
 
 .bare-images-collection {
@@ -87,5 +102,17 @@ main {
 
   @media screen and (max-width: $mobile-max) {
     margin-bottom: $mobile-gap;
+  }
+
+  &.last {
+    margin-bottom: 0;
+  }
+}
+
+.intent-blurbs {
+  margin-bottom: $desktop-spacing;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: $mobile-gap; //
   }
 }

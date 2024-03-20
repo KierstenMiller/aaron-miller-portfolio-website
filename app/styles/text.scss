@@ -1,6 +1,7 @@
 @import '/app/styles/space.scss';
 @import '/app/styles/color.scss';
 
+$mini-font-size: 50%;
 $base-font-size: 62.5%; // using percentage here to change browser's base font-size from 16px to 10px, which is easier to think around
 $font-unit: 1rem;
 $text-xx-small: $font-unit;
