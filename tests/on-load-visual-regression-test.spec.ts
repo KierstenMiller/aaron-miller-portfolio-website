@@ -1,3 +1,4 @@
+// NOTE: CAN ONLY RUN THESE LOCALLY. GITHUB ACTIONS RUNS VIA LINUX AND MY LAPTOP IS DARWIN. https://github.com/microsoft/playwright/issues/14218
 import { expect, test } from '@playwright/test';
 
 test('visual check home page desktop', async ({ page }) => {
