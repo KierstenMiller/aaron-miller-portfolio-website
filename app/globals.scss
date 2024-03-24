@@ -112,6 +112,7 @@ main {
 .full-vid {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
+  width: 100%;
 
   &:not(:last-of-type) {
     margin-bottom: $desktop-spacing;
