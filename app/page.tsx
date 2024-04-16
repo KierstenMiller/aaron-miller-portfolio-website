@@ -27,14 +27,14 @@ export default function Home() {
           </ul>
         </nav> */}
         <ProjectNav ariaLabel="Secondary" />
-        <div className={styles['profile']}>
-        <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
+        <div id="profile" className={styles['profile']}>
+          <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
             <Image className="tablet-min-up-only" src='/static/images/aaron-profile-pic.jpg' alt="Aaron Miller headshot" width={1920} height={1080} />
             <Image className="mobile-max-down-only" src='/static/images/aaron-profile-pic_mobile.jpg' alt="Aaron Miller headshot" width={1920} height={1080} />
           </div>
           <div>
-            <h2 id="profile" className="secondary-title tablet-min-up-only">Hi, I&apos;m Aaron!</h2>
+            <h2 className="secondary-title tablet-min-up-only">Hi, I&apos;m Aaron!</h2>
             <p>I am a digital designer who loves creating clean web and branding experiences. I also specialize in the design of graphics, print, and typography.</p>
             <p>As a designer, I have experience working with creative partners that range from directors, project leads, copywriters, front-end developers, and fellow designers to create products that function seamlessly and look beautiful. I implement my designs using Adobe applications and have been building web and app designs in Sketch and Figma since 2018.</p>
             <p>I earned my Bachelor&apos;s of Graphic Design from the Minneapolis College of Art and Design in 2018. I have enjoyed working in multiple creative roles in a diverse array of studios and companies, including HCL Technologies, space150, and Sleep Number.</p>
@@ -75,13 +75,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+      </main>
+      <footer className={styles['home-footer']}>
+        <div>
+          <p>Created in partnership with the lovely <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kiersten-miller-20a292166/">Kiersten Miller</a>. My wife and web developer!</p>
+          <p>version 1.0 _ 2024</p>
+        </div>
         <div className={styles['back-to-top-container']}>
           <a className="ghostly-button" href="#top">Back to The Top</a>
         </div>
-      </main>
-      <footer className={styles['home-footer']}>
-        <p>Created in partnership with the lovely <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kiersten-miller-20a292166/">Kiersten Miller</a>. My wife and web developer!</p>
-        <p>version 1.0 _ 2024</p>
       </footer>
     </div>
   );

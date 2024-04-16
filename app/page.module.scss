@@ -74,8 +74,10 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: $xx-huge;
-    margin-top: $desktop-spacing * 2;
-    margin-bottom: $desktop-spacing * 2;
+    padding-top: $desktop-spacing; // splitting spacing between padding and margin so that "jump to link" lands comfortably above top of region
+    padding-bottom: $desktop-spacing; // splitting spacing between padding and margin so that "jump to link" lands comfortably above top of region
+    margin-top: $desktop-spacing;
+    margin-bottom: $desktop-spacing;
 
     @media screen and (max-width: $mobile-max) {
         display: block;
@@ -147,18 +149,15 @@
 }
 
 .back-to-top-container {
-    display: flex;
-    justify-content: center;
-    margin-top: $desktop-spacing;
-
-    @media screen and (max-width: $mobile-max) {
-        margin-top: $mobile-spacing;
+    @media screen and (max-width: $tablet-max) {
+        display: none;
     }
 }
 
 .home-footer {
     @include restricted-container;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: $desktop-spacing;
 
