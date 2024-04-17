@@ -1,14 +1,21 @@
+'use client'
+
 import classNames from "classnames";
 import Image from "next/image";
 
+import { useState } from "react";
+
 import { Inventory } from "./components/design/Inventory";
+import { Switch } from "./components/molecules/work-switch";
 import { ProjectNav } from "./components/project-navigation/ProjectNav";
 
 import styles from "./page.module.scss";
 
 export default function Home() {
+  const [isFun, setIsFun] = useState(true);
+
   return (
-    <div>
+    <div className={classNames(styles['page-container'], {[styles["is-fun"]]: isFun})}>
       <header id="top">
         <div className={styles['home-header']}>
           <h1 className="primary-title">Aaron Miller</h1>
@@ -20,12 +27,9 @@ export default function Home() {
         <p className={classNames(styles['header-description'])}>A digital designer who builds efficient web experiences, creates beautiful graphic solutions, and practices iterative, empathetic, and collaborative design.</p>
       </header>
       <main>
-        {/* <nav aria-label="Primary" className="work-menu mb-24">
-          <ul>
-            <li className="main-link work"><a href="">Work</a></li>
-            <li className="main-link not-work"><a href="/not-work">Not Work</a></li>
-          </ul>
-        </nav> */}
+        <div className="work-menu mb-24">
+          <Switch isFun={isFun} setIsFun={setIsFun}/>
+        </div>
         <ProjectNav ariaLabel="Secondary" />
         <div id="profile" className={styles['profile']}>
           <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>

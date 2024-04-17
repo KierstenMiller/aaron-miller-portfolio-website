@@ -3,6 +3,12 @@
 @import '/app/styles/color.scss';
 @import '/app/styles/responsive.scss';
 
+.is-fun {
+    background-color: $deep-black;
+    color: white;
+
+}
+
 .home-header {
     display: flex;
     justify-content: space-between;
