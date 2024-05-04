@@ -2,7 +2,6 @@
 
 import classNames from "classnames";
 import Image from "next/image";
-
 import { useState } from "react";
 
 import { Inventory } from "./components/design/Inventory";
@@ -11,12 +10,11 @@ import { ProjectNav } from "./components/project-navigation/ProjectNav";
 
 import styles from "./page.module.scss";
 
-
 export default function Home() {
   const [isWorkMode, setIsWorkMode] = useState(true);
 
   return (
-    <div className={classNames(styles['page-container'], { [styles["is-work"]]: isWorkMode })}>
+    <div className={classNames(styles['page-container'], { [styles["is-not-work"]]: !isWorkMode })}>
       <header id="top">
         <div className={styles['home-header']}>
           <h1 className="primary-title">Aaron Miller</h1>
@@ -51,33 +49,31 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={styles['gray-container']}>
-          <div className={styles['connect-container']}>
-            <div className={styles['lets-connect']}>
-              <h2 id="contact" className="secondary-title">Let&apos;s Connect!</h2>
-              <p>Want to get in touch? Reach me by emailing me directly, or reaching out to me on LinkedIn.</p>
-              <p>Talk soon!</p>
-            </div>
-            <div className={styles['my-links']}>
-              <h2 className="secondary-title">My Links</h2>
-              <a className="highlighted-button" href="mailto:awmiller1993@gmail.com">awmiller1993@gmail.com</a>
-              <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="/static/files/Aaron_Miller_Resume.pdf">
-                My Resume
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <title>Opens new tab</title>
-                  <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" strokeWidth="1.25" />
-                  <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" strokeWidth="1.25" />
-                </svg>
-              </a>
-              <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/amiller-design/">
-                LinkedIn
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <title>Opens new tab</title>
-                  <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" strokeWidth="1.25" />
-                  <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" strokeWidth="1.25" />
-                </svg>
-              </a>
-            </div>
+        <div className={styles['connect-container']}>
+          <div className={styles['lets-connect']}>
+            <h2 id="contact" className="secondary-title">Let&apos;s Connect!</h2>
+            <p>Want to get in touch? Reach me by emailing me directly, or reaching out to me on LinkedIn.</p>
+            <p>Talk soon!</p>
+          </div>
+          <div className={styles['my-links']}>
+            <h2 className="secondary-title">My Links</h2>
+            <a className="highlighted-button" href="mailto:awmiller1993@gmail.com">awmiller1993@gmail.com</a>
+            <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="/static/files/Aaron_Miller_Resume.pdf">
+              My Resume
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Opens new tab</title>
+                <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" strokeWidth="1.25" />
+                <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" strokeWidth="1.25" />
+              </svg>
+            </a>
+            <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/amiller-design/">
+              LinkedIn
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>Opens new tab</title>
+                <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" strokeWidth="1.25" />
+                <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" strokeWidth="1.25" />
+              </svg>
+            </a>
           </div>
         </div>
 
