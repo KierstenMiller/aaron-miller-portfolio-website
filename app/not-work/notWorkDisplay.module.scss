@@ -1,22 +1,26 @@
 @import '/app/styles/color.scss';
+@import '/app/styles/space.scss';
 
 $gap: 20px;
 
-.image {
-    background: $dark-gray;
-    width: 100%;
-    height: 100%;
+.top-stack {
+    display: grid;
+    gap: $desktop-spacing;
+
+    img {
+        width: 100%;
+    }
 }
 
 .stack {
     display: grid;
-    grid-row-gap: $gap;
+    gap: $gap;
 }
 
 .feature-detail-row {
     display: grid;
     grid-template-columns: calc(62% + $gap) 31%;
-    grid-column-gap: $gap;
+    gap: $gap;
 }
 
 .one-row {
@@ -26,14 +30,14 @@ $gap: 20px;
 
 .two-equal-row {
     display: grid;
-    grid-column-gap: $gap;
+    gap: $gap;
     grid-template-columns: 1fr 1fr;
 }
 
 .three-equal-row {
     display: grid;
     grid-template-columns: 31% 31% 31%;
-    grid-column-gap: $gap;
+    gap: $gap;
 }
 
 .mobile-one-row {
