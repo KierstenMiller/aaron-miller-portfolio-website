@@ -1,35 +1,26 @@
-$toggle-background-color-on: rgb(221, 227, 199);
-$toggle-background-color-off: rgb(221, 145, 145);
-$toggle-control-color: rgb(17, 17, 17);
-$toggle-width: 100px;
-$toggle-height: 50px;
-$toggle-gutter: 5px;
-$toggle-radius: 50%;
-$toggle-control-speed: 1s;
-$toggle-control-ease: ease-in;
+@import '/app/styles/color.scss';
 
-// These are our computed variables
-// change at your own risk.
-$toggle-radius: $toggle-height / 2;
-$toggle-control-size: $toggle-height - ($toggle-gutter * 2);
+$color-1: white;
+$color-2: $deep-black;
+$radius: 55px;
 
 .switch-container {
     overflow: hidden;
     position: relative;
     width: fit-content;
-    background-color: black;
-    border: 1px solid white;
-    border-radius: 55px;
-    transition: background-color $toggle-control-speed $toggle-control-ease;
+    background-color: $color-2;
+    border: 1px solid $color-1;
+    border-radius: $radius;
+    transition: background-color 1s ease-in;
 
-    &.isWork {
-        background-color: white;
-        border: 1px solid black;
+    &.is-work {
+        background-color: $color-1;
+        border: 1px solid $color-2;
 
         .highlight {
             left: 0px;
             right: unset;
-            background-color: black;
+            background-color: $color-2;
         }
     }
 
@@ -40,18 +31,18 @@ $toggle-control-size: $toggle-height - ($toggle-gutter * 2);
         right: 0;
         height: 100%;
         width: 50%;
-        background-color: white;
-        border-radius: 55px;
+        background-color: $color-1;
+        border-radius: $radius;
         transition-property: left, right, background-color, width;
         transition-duration: 1s;
         transition-timing-function: ease;
     }
 
     .switch-button {
+        z-index: 999;
         position: relative;
         min-width: 100px;
-        z-index: 999;
-        padding: $toggle-gutter;
+        padding: 5px;
 
         &.work-button {
             margin-right: 16px;
@@ -59,11 +50,11 @@ $toggle-control-size: $toggle-height - ($toggle-gutter * 2);
     }
 
     .switch-button.work-button {
-        color: white;
+        color: $color-1;
     }
 
     .switch-button.not-work-button {
-        color: black;
+        color: $color-2;
     }
 
 

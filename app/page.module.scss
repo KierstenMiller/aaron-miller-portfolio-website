@@ -3,10 +3,13 @@
 @import '/app/styles/color.scss';
 @import '/app/styles/responsive.scss';
 
-.is-fun {
+.page-container {
     background-color: $deep-black;
     color: white;
-
+    &.is-work {
+        background-color: white;
+        color: $deep-black;
+    }
 }
 
 .home-header {
@@ -68,11 +71,6 @@
         &:not(:last-child) {
             margin-right: $small;
         }
-
-        &.not-work {
-            background: $deep-black;
-            color: white;
-        }
     }
 }
 
@@ -128,7 +126,6 @@
 }
 
 .connect-container {
-    background: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: $desktop-gap;

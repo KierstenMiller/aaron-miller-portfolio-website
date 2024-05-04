@@ -12,10 +12,10 @@ import { ProjectNav } from "./components/project-navigation/ProjectNav";
 import styles from "./page.module.scss";
 
 export default function Home() {
-  const [isFun, setIsFun] = useState(true);
+  const [isWorkMode, setIsWorkMode] = useState(true);
 
   return (
-    <div className={classNames(styles['page-container'], {[styles["is-fun"]]: isFun})}>
+    <div className={classNames(styles['page-container'], {[styles["is-work"]]: isWorkMode})}>
       <header id="top">
         <div className={styles['home-header']}>
           <h1 className="primary-title">Aaron Miller</h1>
@@ -28,7 +28,7 @@ export default function Home() {
       </header>
       <main>
         <div className="work-menu mb-24">
-          <Switch isFun={isFun} setIsFun={setIsFun}/>
+          <Switch isWorkMode={isWorkMode} setIsWorkMode={setIsWorkMode}/>
         </div>
         <ProjectNav ariaLabel="Secondary" />
         <div id="profile" className={styles['profile']}>
