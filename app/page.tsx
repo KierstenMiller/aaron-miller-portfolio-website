@@ -11,11 +11,12 @@ import { ProjectNav } from "./components/project-navigation/ProjectNav";
 
 import styles from "./page.module.scss";
 
+
 export default function Home() {
   const [isWorkMode, setIsWorkMode] = useState(true);
 
   return (
-    <div className={classNames(styles['page-container'], {[styles["is-work"]]: isWorkMode})}>
+    <div className={classNames(styles['page-container'], { [styles["is-work"]]: isWorkMode })}>
       <header id="top">
         <div className={styles['home-header']}>
           <h1 className="primary-title">Aaron Miller</h1>
@@ -28,7 +29,7 @@ export default function Home() {
       </header>
       <main>
         <div className="work-menu mb-24">
-          <Switch isWorkMode={isWorkMode} setIsWorkMode={setIsWorkMode}/>
+          <Switch isWorkMode={isWorkMode} setIsWorkMode={setIsWorkMode} />
         </div>
         <ProjectNav ariaLabel="Secondary" />
         <div id="profile" className={styles['profile']}>
@@ -44,11 +45,11 @@ export default function Home() {
             <p>I earned my Bachelor&apos;s of Graphic Design from the Minneapolis College of Art and Design in 2018. I have enjoyed working in multiple creative roles in a diverse array of studios and companies, including HCL Technologies, space150, and Sleep Number.</p>
             <p>Currently living in Minneapolis with his wife, two cats, and puppy.</p>
             <Inventory snapshots={[
-                {id: 'services', label: 'Services', content: [{id: 'graphic-design', type: 'pill', message: 'Graphic Design'}, {id: 'web-design', type: 'pill', message: 'Web Design'}, {id: 'Production Design', type: 'pill', message: 'Production Design'}, {id: 'ux-ui-strategy', type: 'pill', message: 'UX/UI Strategy'}, {id: 'advertising', type: 'pill', message: 'Advertising'}, {id: 'signage', type: 'pill', message: 'Signage'}, {id: 'illustration', type: 'pill', message: 'Illustration'}, {id: 'web-animation', type: 'pill', message: 'Web Animation'}, {id: 'font-design', type: 'pill', message: 'Font Design'}, {id: 'book-layout', type: 'pill', message: 'Book Layout'}]},
-                {id: 'tools', label: 'Tools', content: [{id: 'figma', type: 'pill', message: 'Figma'}, {id: 'sketch', type: 'pill', message: 'Sketch'}, {id: 'photoshop', type: 'pill', message: 'Photoshop'}, {id: 'illustrator', type: 'pill', message: 'Illustrator'}, {id: 'indesign', type: 'pill', message: 'InDesign'}, {id: 'after-effects', type: 'pill', message: 'After Effects'}, {id: 'html', type: 'pill', message: 'HTML'}, {id: 'css', type: 'pill', message: 'CSS'}, {id: 'javascript', type: 'pill', message: 'Javascript'}]},
-              ]}
+              { id: 'services', label: 'Services', content: [{ id: 'graphic-design', type: 'pill', message: 'Graphic Design' }, { id: 'web-design', type: 'pill', message: 'Web Design' }, { id: 'Production Design', type: 'pill', message: 'Production Design' }, { id: 'ux-ui-strategy', type: 'pill', message: 'UX/UI Strategy' }, { id: 'advertising', type: 'pill', message: 'Advertising' }, { id: 'signage', type: 'pill', message: 'Signage' }, { id: 'illustration', type: 'pill', message: 'Illustration' }, { id: 'web-animation', type: 'pill', message: 'Web Animation' }, { id: 'font-design', type: 'pill', message: 'Font Design' }, { id: 'book-layout', type: 'pill', message: 'Book Layout' }] },
+              { id: 'tools', label: 'Tools', content: [{ id: 'figma', type: 'pill', message: 'Figma' }, { id: 'sketch', type: 'pill', message: 'Sketch' }, { id: 'photoshop', type: 'pill', message: 'Photoshop' }, { id: 'illustrator', type: 'pill', message: 'Illustrator' }, { id: 'indesign', type: 'pill', message: 'InDesign' }, { id: 'after-effects', type: 'pill', message: 'After Effects' }, { id: 'html', type: 'pill', message: 'HTML' }, { id: 'css', type: 'pill', message: 'CSS' }, { id: 'javascript', type: 'pill', message: 'Javascript' }] },
+            ]}
             />
-          </div> 
+          </div>
         </div>
         <div className={styles['gray-container']}>
           <div className={styles['connect-container']}>
@@ -64,22 +65,22 @@ export default function Home() {
                 My Resume
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <title>Opens new tab</title>
-                  <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" strokeWidth="1.25"/>
-                  <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" strokeWidth="1.25"/>
+                  <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" strokeWidth="1.25" />
+                  <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" strokeWidth="1.25" />
                 </svg>
               </a>
               <a className="highlighted-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/amiller-design/">
                 LinkedIn
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <title>Opens new tab</title>
-                  <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" strokeWidth="1.25"/>
-                  <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" strokeWidth="1.25"/>
+                  <path d="M6.20033 3.39941H3C1.89543 3.39941 1 4.29484 1 5.39941V11C1 12.1046 1.89543 13 3 13H8.60061C9.70518 13 10.6006 12.1046 10.6006 11V7.79969" stroke="white" strokeWidth="1.25" />
+                  <path d="M8.20044 1C9.76263 1 13.0007 1 13.0007 1M13.0007 1C13.0007 1 13.0007 4.23811 13.0007 5.80031M13.0007 1L6.00017 8.00057" stroke="white" strokeWidth="1.25" />
                 </svg>
               </a>
             </div>
           </div>
         </div>
-        
+
       </main>
       <footer className={styles['home-footer']}>
         <div>
