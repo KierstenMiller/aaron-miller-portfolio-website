@@ -56,7 +56,17 @@ export const NotWorkDisplay = () => {
             <div className={styles['one-row']}>
                 <div className={styles['image']}>tasty image</div>
             </div>
-
+        </div>
+        <div className={styles['stack']}>
+            <div className={styles['feature-detail-row']}>
+                <div className={styles['image']}>arcana image</div>
+                <div className={styles['image']}>arcana image</div>
+            </div>
+            <div className={styles['three-equal-row']}>
+                <div className={styles['image']}>arcana image</div>
+                <div className={styles['image']}>arcana image</div>
+                <div className={styles['image']}>arcana image</div>
+            </div>
         </div>
     </div>
 }
