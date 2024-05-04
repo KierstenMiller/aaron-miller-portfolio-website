@@ -8,6 +8,7 @@ import { Inventory } from "./components/design/Inventory";
 import { Switch } from "./components/molecules/work-switch";
 import { ProjectNav } from "./components/project-navigation/ProjectNav";
 
+import { NotWorkDisplay } from "./not-work/notWorkDisplay";
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -29,7 +30,8 @@ export default function Home() {
         <div className={styles['work-menu']}>
           <Switch isWorkMode={isWorkMode} setIsWorkMode={setIsWorkMode} />
         </div>
-        <ProjectNav ariaLabel="Secondary" />
+        {isWorkMode ? <ProjectNav ariaLabel="Secondary" /> : <NotWorkDisplay />}
+
         <div id="profile" className={styles['profile']}>
           <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
