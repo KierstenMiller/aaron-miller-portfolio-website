@@ -27,46 +27,99 @@ export const NotWorkDisplay = () => {
         arcanaType3: { id: 'arcana-type-3', src: '/static/images/arcana-type-3.jpg', alt: 'Arcana Type 3' },
     }
 
-    return <div className={styles['stack']}>
-        <div className={styles['stack']}>
-            <div className={styles['feature-detail-row']}>
+    return <div>
+        MOBILE
+        <div id="mobile" className={styles['stack']}>
+            <div className={styles['mobile-one-row']}>
                 <div className={styles['image']}>forest image</div>
-                <div className={styles["stack"]}>
+            </div>
+            <div className={styles['mobile-two-equal-row']}>
+                <div className={styles['stack']}>
                     <div className={styles['image']}>forest image</div>
                     <div className={styles['image']}>forest image</div>
                 </div>
+                <div className={styles['image']}>forest image</div>
             </div>
-            <div className={styles['three-equal-row']}>
-                <div className={styles['image']}>forest image</div>
-                <div className={styles['image']}>forest image</div>
-                <div className={styles['image']}>forest image</div>
+            <div className={styles['mobile-one-row']}>
+                <div className={styles['image']}>feast image</div>
+            </div>
+            <div className={styles['mobile-one-row']}>
+                <div className={styles['image']}>feast image</div>
+            </div>
+            <div className={styles['mobile-two-equal-row']}>
+                <div className={styles['image']}>feast image</div>
+                <div className={styles['image']}>feast image</div>
+            </div>
+            <div className={styles['mobile-one-row']}>
+                <div className={styles['image']}>feast image</div>
+            </div>
+            <div className={styles['mobile-one-row']}>
+                <div className={styles['image']}>tasty image</div>
+            </div>
+            <div className={styles['mobile-one-row']}>
+                <div className={styles['image']}>tasty image</div>
+            </div>
+            <div className={styles['mobile-two-equal-row']}>
+                <div className={styles['image']}>tasty image</div>
+                <div className={styles['image']}>tasty image</div>
+            </div>
+            <div className={styles['mobile-one-row']}>
+                <div className={styles['image']}>arcana image</div>
+            </div>
+            <div className={styles['mobile-two-equal-row']}>
+                <div className={styles['image']}>arcana image</div>
+                <div className={styles['stack']}>
+                    <div className={styles['image']}>arcana image</div>
+                    <div className={styles['image']}>arcana image</div>
+                    <div className={styles['image']}>arcana image</div>
+                    <div className={styles['image']}>arcana image</div>
+                </div>
             </div>
         </div>
-        <div className={styles['stack']}>
-            <div className={styles['feature-detail-row']}>
-                <div className={styles['image']}>tasty image</div>
-                <div className={styles["stack"]}>
-                    <div className={styles['image']}>tasty image</div>
-                    <div className={styles['two-equal-row']}>
-                        <div className={styles['image']}>tasty image</div>
-                        <div className={styles['image']}>tasty image</div>
+        DESKTOP
+        <div id="desktop" className={styles['stack']}>
+            <div className={styles['stack']}>
+                <div className={styles['feature-detail-row']}>
+                    <div className={styles['image']}>forest image</div>
+                    <div className={styles["stack"]}>
+                        <div className={styles['image']}>forest image</div>
+                        <div className={styles['image']}>forest image</div>
                     </div>
                 </div>
+                <div className={styles['three-equal-row']}>
+                    <div className={styles['image']}>forest image</div>
+                    <div className={styles['image']}>forest image</div>
+                    <div className={styles['image']}>forest image</div>
+                </div>
             </div>
-            <div className={styles['one-row']}>
-                <div className={styles['image']}>tasty image</div>
+            <div className={styles['stack']}>
+                <div className={styles['feature-detail-row']}>
+                    <div className={styles['image']}>tasty image</div>
+                    <div className={styles["stack"]}>
+                        <div className={styles['image']}>tasty image</div>
+                        <div className={styles['two-equal-row']}>
+                            <div className={styles['image']}>tasty image</div>
+                            <div className={styles['image']}>tasty image</div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles['one-row']}>
+                    <div className={styles['image']}>tasty image</div>
+                </div>
             </div>
-        </div>
-        <div className={styles['stack']}>
-            <div className={styles['feature-detail-row']}>
-                <div className={styles['image']}>arcana image</div>
-                <div className={styles['image']}>arcana image</div>
-            </div>
-            <div className={styles['three-equal-row']}>
-                <div className={styles['image']}>arcana image</div>
-                <div className={styles['image']}>arcana image</div>
-                <div className={styles['image']}>arcana image</div>
+            <div className={styles['stack']}>
+                <div className={styles['feature-detail-row']}>
+                    <div className={styles['image']}>arcana image</div>
+                    <div className={styles['image']}>arcana image</div>
+                </div>
+                <div className={styles['three-equal-row']}>
+                    <div className={styles['image']}>arcana image</div>
+                    <div className={styles['image']}>arcana image</div>
+                    <div className={styles['image']}>arcana image</div>
+                </div>
             </div>
         </div>
     </div>
+
+
 }

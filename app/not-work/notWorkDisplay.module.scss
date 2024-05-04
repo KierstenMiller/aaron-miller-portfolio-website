@@ -35,3 +35,15 @@ $gap: 20px;
     grid-template-columns: 31% 31% 31%;
     grid-column-gap: $gap;
 }
+
+.mobile-one-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap;
+}
+
+.mobile-two-equal-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gap;
+}
