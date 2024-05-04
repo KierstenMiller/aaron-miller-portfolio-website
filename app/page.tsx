@@ -26,7 +26,7 @@ export default function Home() {
         <p className={classNames(styles['header-description'])}>A digital designer who builds efficient web experiences, creates beautiful graphic solutions, and practices iterative, empathetic, and collaborative design.</p>
       </header>
       <main>
-        <div className="work-menu mb-24">
+        <div className={styles['work-menu']}>
           <Switch isWorkMode={isWorkMode} setIsWorkMode={setIsWorkMode} />
         </div>
         <ProjectNav ariaLabel="Secondary" />

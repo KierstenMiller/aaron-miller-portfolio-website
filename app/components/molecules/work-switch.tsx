@@ -11,28 +11,30 @@ interface props {
 
 export const Switch = ({ isWorkMode, setIsWorkMode }: props) => {
 
-  return <fieldset className={classNames(styles['switch-container'], { [styles['is-work']] : isWorkMode })}>
+  return <fieldset className={classNames(styles['switch-container'], { [styles['is-work']]: isWorkMode })}>
     <legend className="sr-only">Project View</legend>
-    <span className={styles["highlight"]}/>
-    <button
-      className={classNames(styles['switch-button'], styles['work-button'])}
-      type="button"
-      id="b01s"
-      aria-checked={isWorkMode === true}
-      role="switch"
-      onClick={() => setIsWorkMode(true)}
-    >
-      Work
-    </button>
-    <button
-    className={classNames(styles['switch-button'], styles['not-work-button'])}
-      type="button"
-      id="b02s"
-      aria-checked={isWorkMode !== true}
-      role="switch"
-      onClick={() => setIsWorkMode(false)}
-    >
-      Not Work
-    </button>
+    <div className={styles['switch']}>
+      <span className={styles["highlight"]} />
+      <button
+        className={classNames(styles['switch-button'], styles['work-button'])}
+        type="button"
+        id="b01s"
+        aria-checked={isWorkMode === true}
+        role="switch"
+        onClick={() => setIsWorkMode(true)}
+      >
+        Work
+      </button>
+      <button
+        className={classNames(styles['switch-button'], styles['not-work-button'])}
+        type="button"
+        id="b02s"
+        aria-checked={isWorkMode !== true}
+        role="switch"
+        onClick={() => setIsWorkMode(false)}
+      >
+        Not Work
+      </button>
+    </div>
   </fieldset>
 }

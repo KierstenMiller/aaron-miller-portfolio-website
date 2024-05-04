@@ -7,6 +7,8 @@ $dark: $deep-black;
 $light: white;
 
 .page-container {
+    transition: background-color 1s ease;
+
     &.is-not-work {
         background-color: $deep-black;
 
@@ -73,20 +75,8 @@ $light: white;
 }
 
 .work-menu {
-    ul {
-        display: flex;
-    }
-
-    .main-link {
-        display: inline-block;
-        border: 1px solid $base-gray;
-        border-radius: $small;
-        padding: $x-small $small;
-
-        &:not(:last-child) {
-            margin-right: $small;
-        }
-    }
+    margin-top: $desktop-spacing - 10px; // hanging character are real turds
+    margin-bottom: $desktop-spacing;
 }
 
 .profile {
