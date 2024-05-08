@@ -13,4 +13,55 @@
         margin-top: $mobile-spacing;
         margin-bottom: $mobile-spacing;
     }
+
+    .stuff-container {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-name {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        color: white;
+        opacity: 0;
+        font-size: 32px;
+        transition-property: opacity;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+    }
+
+    a {
+        display: block;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    a:hover {
+        .project-name {
+            opacity: 1;
+
+            white-space: nowrap;
+        }
+
+        img {
+            animation: blur 2s 1;
+            filter: blur(1.5rem);
+        }
+    }
+
+    @keyframes blur {
+
+        0% {
+            filter: blur(0px);
+        }
+
+        100% {
+            filter: blur(1.5rem);
+        }
+    }
 }
