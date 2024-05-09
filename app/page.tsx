@@ -35,8 +35,8 @@ export default function Home() {
         <div id="profile" className={styles['profile']}>
           <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
-            <Image className="tablet-min-up-only" src='/static/images/aaron-profile-pic.jpg' alt="Aaron Miller headshot" width={1920} height={1080} />
-            <Image className="mobile-max-down-only" src='/static/images/aaron-profile-pic_mobile.jpg' alt="Aaron Miller headshot" width={1920} height={1080} />
+            <Image className="tablet-min-up-only" src='/static/images/aaron-profile-pic.png' alt="Aaron Miller headshot" width={1920} height={1080} />
+            <Image className="mobile-max-down-only" src='/static/images/aaron-profile-pic_mobile.png' alt="Aaron Miller headshot" width={1920} height={1080} />
           </div>
           <div>
             <h2 className="secondary-title tablet-min-up-only">Hi, I&apos;m Aaron!</h2>

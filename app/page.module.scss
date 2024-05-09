@@ -6,6 +6,22 @@
 $dark: $deep-black;
 $light: white;
 
+@mixin header-description-text {
+    @include primary-title;
+    max-width: 1000px;
+    color: $base-gray;
+
+    @media screen and (max-width: $mobile-max) {
+        @include secondary-title;
+        color: $base-gray;
+        font-weight: $text-weight-bold;
+    }
+
+    @media screen and (max-width: $mini-max) {
+        font-size: $text-medium;
+    }
+}
+
 .page-container {
     transition: background-color 1s ease;
 
@@ -59,19 +75,7 @@ $light: white;
 }
 
 .header-description {
-    @include primary-title;
-    max-width: 1000px;
-    color: $base-gray;
-
-    @media screen and (max-width: $mobile-max) {
-        @include secondary-title;
-        color: $base-gray;
-        font-weight: $text-weight-bold;
-    }
-
-    @media screen and (max-width: $mini-max) {
-        font-size: $text-medium;
-    }
+    @include header-description-text;
 }
 
 .work-menu {
