@@ -11,7 +11,7 @@ interface props {
 
 export const Switch = ({ isWorkMode, setIsWorkMode }: props) => {
 
-  return <fieldset className={classNames(styles['switch-container'], { [styles['is-work']]: isWorkMode })}>
+  return <fieldset className={classNames(styles['switch-container'], isWorkMode ? styles['is-work'] : styles['is-not-work'])}>
     <legend className="sr-only">Project View</legend>
     <div className={styles['switch']}>
       <span className={styles["highlight"]} />
