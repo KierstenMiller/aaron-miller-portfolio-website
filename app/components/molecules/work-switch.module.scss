@@ -3,23 +3,39 @@
 $color-1: white;
 $color-2: $deep-black;
 $radius: 12px;
+$duration: 0.5s;
 
 .switch-container {
     width: fit-content;
-    border-radius: $radius;
+    border-radius: $radius + 2px; // to fit visually the container needs a more dramatic border-radius (likely due to it being bigger and the same border-radius appearing less on a bigger area of corner)
     padding: 4px;
-    transition: box-shadow 1s ease;
+    transition: box-shadow $duration ease;
     box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 1);
 
     &.is-work {
         box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.45);
 
-        .switch {
+        &:hover {
+            background-color: $color-2;
+
             .highlight {
-                left: 0px;
-                right: unset;
-                background-color: $color-2;
+                background-color: $color-1;
+                border: none;
             }
+
+            .switch-button.work-button {
+                color: $color-2;
+            }
+
+            .switch-button.not-work-button {
+                color: $color-1;
+            }
+        }
+
+        .highlight {
+            left: 0px;
+            right: unset;
+            background-color: $color-2;
         }
 
     }
@@ -32,17 +48,30 @@ $radius: 12px;
     width: fit-content;
     min-height: 44px;
 
+    &:hover {
+        //background-color: pink;
+
+        .highlight {
+            background-color: $color-2;
+            border: 1px solid $color-1;
+        }
+
+        .switch-button.not-work-button {
+            color: $color-1;
+        }
+    }
+
     .highlight {
         position: absolute;
         display: block;
         left: unset;
         right: 0;
         height: 100%;
-        width: 50%;
+        width: 47%;
         background-color: $color-1;
         border-radius: $radius;
         transition-property: left, right, background-color, width;
-        transition-duration: 1s;
+        transition-duration: $duration;
         transition-timing-function: ease;
     }
 
