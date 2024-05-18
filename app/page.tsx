@@ -35,7 +35,7 @@ export default function Home() {
         <div id="profile" className={styles['profile']}>
           <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
-            <Image className="tablet-min-up-only" src='/static/images/aaron-profile-pic.png' alt="Aaron Miller headshot" width={1920} height={1080} />
+            <Image className={classNames(styles['profile-pic-desktop'], 'tablet-min-up-only')} src='/static/images/aaron-profile-pic.png' alt="Aaron Miller headshot" width={1920} height={1080} />
             <Image className="mobile-max-down-only" src='/static/images/aaron-profile-pic_mobile.png' alt="Aaron Miller headshot" width={1920} height={1080} />
           </div>
           <div>
@@ -54,7 +54,7 @@ export default function Home() {
         <div className={styles['connect-container']}>
           <div className={styles['lets-connect']}>
             <h2 id="contact" className="secondary-title">Let&apos;s Connect!</h2>
-            <p>Want to get in touch? Reach me by emailing me directly, or reaching out to me on LinkedIn.</p>
+            <p className={styles['get-in-touch-blurb']}>Want to get in touch? Reach out to me directly by email, or connect with me on LinkedIn.</p>
             <p>Talk soon!</p>
           </div>
           <div className={styles['my-links']}>

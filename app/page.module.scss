@@ -25,6 +25,15 @@ $light: white;
 .page-container {
     transition: background-color 1s ease;
 
+    :global(.highlighted-button),
+    :global(.ghostly-button) {
+
+        &:hover {
+            background-color: $dark;
+            color: $light;
+        }
+    }
+
     &.is-not-work {
         background-color: $deep-black;
 
@@ -37,6 +46,12 @@ $light: white;
         :global(.ghostly-button) {
             background-color: $light;
             color: $dark;
+            border: 1px solid $light;
+
+            &:hover {
+                background-color: $dark;
+                color: $light;
+            }
         }
 
         .connect-container {
@@ -112,6 +127,17 @@ $light: white;
         }
     }
 
+    .profile-pic-desktop {
+        height: 670px;
+        max-width: unset;
+        width: auto;
+
+        @media screen and (max-width: $tablet-max) {
+            height: unset;
+            width: 30vw;
+        }
+    }
+
     :global(.inventory-collection) {
         margin-top: $desktop-gap;
 
@@ -151,6 +177,10 @@ $light: white;
 
     p {
         margin-bottom: $mobile-gap;
+    }
+
+    .get-in-touch-blurb {
+        max-width: 400px;
     }
 }
 
