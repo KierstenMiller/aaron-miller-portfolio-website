@@ -51,6 +51,14 @@ $light: white;
             &:hover {
                 background-color: $dark;
                 color: $light;
+
+                svg path {
+                    stroke: $light;
+                }
+            }
+
+            svg path {
+                stroke: $dark;
             }
         }
 

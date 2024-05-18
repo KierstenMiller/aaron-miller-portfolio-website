@@ -88,7 +88,7 @@ export default function Home() {
       <footer className={styles['home-footer']}>
         <div>
           <p>Created in partnership with the lovely <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kiersten-miller-20a292166/">Kiersten Miller</a>. My wife and web developer!</p>
-          <p>version 1.0 _ 2024</p>
+          <p>version 2.0 _ 2024</p>
         </div>
         <div className={styles['back-to-top-container']}>
           <a className="ghostly-button" href="#top">Back to The Top</a>
