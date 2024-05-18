@@ -24,7 +24,12 @@ export default function Home() {
             <a className="ghostly-button" href="#contact">Contact</a>
           </div>
         </div>
-        <p className={classNames(styles['header-description'])}>A digital designer who builds efficient web experiences, creates beautiful graphic solutions, and practices iterative, empathetic, and collaborative design.</p>
+        <p className={classNames(styles['header-description'])}>
+          {isWorkMode
+            ? 'A digital designer who builds efficient web experiences, creates beautiful graphic solutions, and practices iterative, empathetic, and collaborative design.'
+            : 'A graphic designer, poster-maker, illustrator, and humble typography scientist.'
+          }
+        </p>
       </header>
       <main>
         <div className={styles['work-menu']}>

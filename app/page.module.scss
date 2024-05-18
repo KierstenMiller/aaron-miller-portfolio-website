@@ -54,6 +54,10 @@ $light: white;
             }
         }
 
+        .header-description {
+            max-width: 1100px;
+        }
+
         .connect-container {
             background-color: $dark-gray;
             padding: $desktop-gap;
@@ -91,6 +95,12 @@ $light: white;
 
 .header-description {
     @include header-description-text;
+
+    @media screen and (min-width: $desktop-min) {
+        min-height: 230px;
+
+    }
+
 }
 
 .work-menu {
