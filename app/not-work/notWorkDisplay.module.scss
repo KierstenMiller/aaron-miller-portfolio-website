@@ -1,0 +1,53 @@
+@import '/app/styles/color.scss';
+@import '/app/styles/space.scss';
+
+$gap: 20px;
+
+.top-stack {
+    display: grid;
+    gap: $desktop-spacing;
+
+    img {
+        width: 100%;
+    }
+}
+
+.stack {
+    display: grid;
+    gap: $gap;
+}
+
+.feature-detail-row {
+    display: grid;
+    grid-template-columns: calc(62% + $gap) 31%;
+    gap: $gap;
+}
+
+.one-row {
+    display: grid;
+    grid-template-columns: calc(93% + $gap + $gap);
+}
+
+.two-equal-row {
+    display: grid;
+    gap: $gap;
+    grid-template-columns: 1fr 1fr;
+}
+
+.three-equal-row {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    gap: $gap;
+}
+
+.mobile-one-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap;
+}
+
+.mobile-two-equal-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gap;
+}

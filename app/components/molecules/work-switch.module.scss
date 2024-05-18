@@ -1,0 +1,93 @@
+@import '/app/styles/color.scss';
+
+$color-1: white;
+$color-2: $deep-black;
+$radius: 12px;
+$duration: 0.5s;
+
+.switch-container {
+    width: fit-content;
+    border-radius: $radius + 2px; // to fit visually the container needs a more dramatic border-radius (likely due to it being bigger and the same border-radius appearing less on a bigger area of corner)
+    padding: 4px;
+    transition: box-shadow $duration ease;
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 1);
+
+    &:hover {
+        outline-offset: 5px;
+    }
+
+    &.is-work {
+        box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.45);
+
+        .highlight {
+            left: 0px;
+            right: unset;
+            background-color: $color-2;
+        }
+
+        .switch-button.not-work-button {
+            color: $color-2;
+
+            &:hover {
+                border: 1px solid $color-2 !important;
+                border-radius: $radius;
+            }
+        }
+
+    }
+
+    &.is-not-work {
+        .highlight {
+            right: 0px;
+            left: unset;
+            background-color: $color-1;
+        }
+
+        .switch-button.work-button {
+            color: $color-1;
+
+            &:hover {
+                border: 1px solid $color-1 !important;
+                border-radius: $radius;
+            }
+        }
+    }
+}
+
+.switch {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    min-height: 44px;
+
+    .highlight {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 48%;
+        border-radius: $radius;
+        transition-property: left, right, background-color, width;
+        transition-duration: $duration;
+        transition-timing-function: ease;
+    }
+
+    .switch-button {
+        z-index: 999;
+        position: relative;
+        min-width: 100px;
+        padding: 5px;
+
+        &.work-button {
+            margin-right: 7px;
+        }
+    }
+
+    .switch-button.work-button {
+        color: $color-1;
+    }
+
+    .switch-button.not-work-button {
+        color: $color-2;
+    }
+}
