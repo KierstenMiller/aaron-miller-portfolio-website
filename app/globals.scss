@@ -72,12 +72,12 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: $desktop-gap;
 
-  &.mobile-break {
-    grid-template-columns: 1fr;
-  }
-
   @media screen and (max-width: $mobile-max) {
     gap: $mobile-gap;
+
+    &.mobile-break {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
