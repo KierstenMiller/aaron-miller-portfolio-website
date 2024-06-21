@@ -111,17 +111,12 @@ main {
 
 .full-vid {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
+  border-radius: 20px;
   width: 100%;
-
-  &:not(:last-of-type) {
-    margin-bottom: $desktop-spacing;
-  }
+  margin-bottom: $desktop-gap;
 
   @media screen and (max-width: $mobile-max) {
-    &:not(:last-of-type) {
-      margin-bottom: $mobile-spacing;
-    }
+    margin-bottom: $mobile-gap;
   }
 }
 
