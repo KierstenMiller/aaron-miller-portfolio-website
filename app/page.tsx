@@ -3,33 +3,18 @@
 import classNames from "classnames";
 import Image from "next/image";
 import { useState } from "react";
-import { useInView } from "react-intersection-observer";
 
 import { Inventory } from "./components/design/Inventory";
+import { useViews, viewOptions } from "./components/molecules/useViews";
 import { Switch } from "./components/molecules/work-switch";
 import { ProjectNav } from "./components/project-navigation/ProjectNav";
 import { NotWorkDisplay } from "./not-work/notWorkDisplay";
 
 import styles from "./page.module.scss";
 
-// TODO: move mobile menu into own component
 export default function Home() {
-  const [lastView, setLastView] = useState('');
   const [isWorkMode, setIsWorkMode] = useState(true);
-  const [workRef, workInView, workEntry] = useInView({ threshold: 0.1, onChange: (inView) => viewFinder('work', inView) });
-  const [profileRef, profileInView, profileEntry] = useInView({ threshold: 0.1, onChange: (inView) => viewFinder('profile', inView) });
-  const [contactRef, contactInView, contactEntry] = useInView({ threshold: 0.1, onChange: (inView) => viewFinder('contact', inView) });
-  const viewFinder = (self: "work" | "profile" | "contact", selfInView: boolean) => {
-    const viewData = [{ id: "work", value: workInView }, { id: "profile", value: profileInView }, { id: "contact", value: contactInView }];
-    if (selfInView) {
-      setLastView(self);
-    } else {
-      const otherViews = viewData.filter(item => item.id !== self);
-      const views = otherViews.filter(item => item?.value === true);
-      setLastView(views[0]?.id);
-    }
-  }
-
+  const { currentView, workRef, profileRef, contactRef } = useViews(viewOptions.work); // TODO set via the url (if #work, #profile, #contact, etc.)
   return (
     <div id="top" className={classNames(styles['page-container'], { [styles["is-not-work"]]: !isWorkMode })}>
       <header>
@@ -37,13 +22,13 @@ export default function Home() {
           <h1 className="primary-title">Aaron Miller</h1>
           <ul className={styles['actions-menu']}>
             <li className="mobile-max-down-only">
-              <a className={classNames('ghostly-button', { [styles['in-view']]: lastView === 'work' })} href="#work">{isWorkMode ? "Work" : "Not Work"}</a>
+              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'work' })} href="#work">{isWorkMode ? "Work" : "Not Work"}</a>
             </li>
             <li>
-              <a className={classNames('ghostly-button', { [styles['in-view']]: lastView === 'profile' })} href="#profile">Info</a>
+              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'profile' })} href="#profile">Info</a>
             </li>
             <li>
-              <a className={classNames('ghostly-button', { [styles['in-view']]: lastView === 'contact' })} href="#contact">Contact</a>
+              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'contact' })} href="#contact">Contact</a>
             </li>
           </ul>
         </div>
