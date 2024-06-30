@@ -76,7 +76,7 @@ $light: white;
             color: white;
             border: 1px solid transparent;
 
-            .in-view {
+            &.in-view {
                 background-color: white;
                 color: $dark;
             }
@@ -105,7 +105,7 @@ $light: white;
         left: 0;
         width: 100%;
         justify-content: center;
-        margin-bottom: $mobile-spacing;
+        margin-bottom: $mobile-gap;
     }
 
     @media screen and (max-width: $mini-max) {

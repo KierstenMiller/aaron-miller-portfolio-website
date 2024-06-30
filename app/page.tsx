@@ -14,7 +14,7 @@ import styles from "./page.module.scss";
 
 export default function Home() {
   const [isWorkMode, setIsWorkMode] = useState(true);
-  const { currentView, workRef, profileRef, contactRef } = useViews(viewOptions.work); // TODO set via the url (if #work, #profile, #contact, etc.)
+  const { currentView, workRef, profileRef, contactRef } = useViews(viewOptions.work);
   return (
     <div id="top" className={classNames(styles['page-container'], { [styles["is-not-work"]]: !isWorkMode })}>
       <header>
@@ -22,13 +22,13 @@ export default function Home() {
           <h1 className="primary-title">Aaron Miller</h1>
           <ul className={styles['actions-menu']}>
             <li className="mobile-max-down-only">
-              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'work' })} href="#work">{isWorkMode ? "Work" : "Not Work"}</a>
+              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'work' })} href={`#${viewOptions.work}`}>{isWorkMode ? "Work" : "Not Work"}</a>
             </li>
             <li>
-              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'profile' })} href="#profile">Info</a>
+              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'profile' })} href={`#${viewOptions.profile}`}>Info</a>
             </li>
             <li>
-              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'contact' })} href="#contact">Contact</a>
+              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'contact' })} href={`#${viewOptions.contact}`}>Contact</a>
             </li>
           </ul>
         </div>
@@ -40,13 +40,13 @@ export default function Home() {
         </p>
       </header>
       <main>
-        <div ref={workRef} id="work">
+        <div ref={workRef} id={viewOptions.work}>
           <div className={styles['work-menu']}>
             <Switch isWorkMode={isWorkMode} setIsWorkMode={setIsWorkMode} />
           </div>
           {isWorkMode ? <ProjectNav ariaLabel="Secondary" /> : <NotWorkDisplay />}
         </div>
-        <div ref={profileRef} id="profile" className={styles['profile']}>
+        <div ref={profileRef} id={viewOptions.profile} className={styles['profile']}>
           <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
             <Image className={classNames(styles['profile-pic-desktop'], 'tablet-min-up-only')} src='/static/images/aaron-profile-pic.png' alt="Aaron Miller headshot" width={1920} height={1080} />
@@ -65,7 +65,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div ref={contactRef} id="contact" className={styles['connect-container']}>
+        <div ref={contactRef} id={viewOptions.contact} className={styles['connect-container']}>
           <div className={styles['lets-connect']}>
             <h2 className="secondary-title">Let&apos;s Connect!</h2>
             <p className={styles['get-in-touch-blurb']}>Want to get in touch? Reach out to me directly by email, or connect with me on LinkedIn.</p>
