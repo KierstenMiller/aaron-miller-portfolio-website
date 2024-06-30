@@ -3,26 +3,49 @@
 import classNames from "classnames";
 import Image from "next/image";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 import { Inventory } from "./components/design/Inventory";
 import { Switch } from "./components/molecules/work-switch";
 import { ProjectNav } from "./components/project-navigation/ProjectNav";
-
 import { NotWorkDisplay } from "./not-work/notWorkDisplay";
+
 import styles from "./page.module.scss";
 
+// TODO: move mobile menu into own component
 export default function Home() {
+  const [lastView, setLastView] = useState('');
   const [isWorkMode, setIsWorkMode] = useState(true);
+  const [workRef, workInView, workEntry] = useInView({ threshold: 0.1, onChange: (inView) => viewFinder('work', inView) });
+  const [profileRef, profileInView, profileEntry] = useInView({ threshold: 0.1, onChange: (inView) => viewFinder('profile', inView) });
+  const [contactRef, contactInView, contactEntry] = useInView({ threshold: 0.1, onChange: (inView) => viewFinder('contact', inView) });
+  const viewFinder = (self: "work" | "profile" | "contact", selfInView: boolean) => {
+    const viewData = [{ id: "work", value: workInView }, { id: "profile", value: profileInView }, { id: "contact", value: contactInView }];
+    if (selfInView) {
+      setLastView(self);
+    } else {
+      const otherViews = viewData.filter(item => item.id !== self);
+      const views = otherViews.filter(item => item?.value === true);
+      setLastView(views[0]?.id);
+    }
+  }
 
   return (
-    <div className={classNames(styles['page-container'], { [styles["is-not-work"]]: !isWorkMode })}>
-      <header id="top">
+    <div id="top" className={classNames(styles['page-container'], { [styles["is-not-work"]]: !isWorkMode })}>
+      <header>
         <div className={styles['home-header']}>
           <h1 className="primary-title">Aaron Miller</h1>
-          <div className={styles['actions-menu']}>
-            <a className="ghostly-button" href="#profile">Info</a>
-            <a className="ghostly-button" href="#contact">Contact</a>
-          </div>
+          <ul className={styles['actions-menu']}>
+            <li className="mobile-max-down-only">
+              <a className={classNames('ghostly-button', { [styles['in-view']]: lastView === 'work' })} href="#work">{isWorkMode ? "Work" : "Not Work"}</a>
+            </li>
+            <li>
+              <a className={classNames('ghostly-button', { [styles['in-view']]: lastView === 'profile' })} href="#profile">Info</a>
+            </li>
+            <li>
+              <a className={classNames('ghostly-button', { [styles['in-view']]: lastView === 'contact' })} href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
         <p className={classNames(styles['header-description'])}>
           {isWorkMode
@@ -32,12 +55,13 @@ export default function Home() {
         </p>
       </header>
       <main>
-        <div className={styles['work-menu']}>
-          <Switch isWorkMode={isWorkMode} setIsWorkMode={setIsWorkMode} />
+        <div ref={workRef} id="work">
+          <div className={styles['work-menu']}>
+            <Switch isWorkMode={isWorkMode} setIsWorkMode={setIsWorkMode} />
+          </div>
+          {isWorkMode ? <ProjectNav ariaLabel="Secondary" /> : <NotWorkDisplay />}
         </div>
-        {isWorkMode ? <ProjectNav ariaLabel="Secondary" /> : <NotWorkDisplay />}
-
-        <div id="profile" className={styles['profile']}>
+        <div ref={profileRef} id="profile" className={styles['profile']}>
           <h2 className="secondary-title mobile-max-down-only">Hi, I&apos;m Aaron!</h2>
           <div>
             <Image className={classNames(styles['profile-pic-desktop'], 'tablet-min-up-only')} src='/static/images/aaron-profile-pic.png' alt="Aaron Miller headshot" width={1920} height={1080} />
@@ -56,9 +80,9 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className={styles['connect-container']}>
+        <div ref={contactRef} id="contact" className={styles['connect-container']}>
           <div className={styles['lets-connect']}>
-            <h2 id="contact" className="secondary-title">Let&apos;s Connect!</h2>
+            <h2 className="secondary-title">Let&apos;s Connect!</h2>
             <p className={styles['get-in-touch-blurb']}>Want to get in touch? Reach out to me directly by email, or connect with me on LinkedIn.</p>
             <p>Talk soon!</p>
           </div>

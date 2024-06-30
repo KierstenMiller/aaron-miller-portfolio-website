@@ -70,6 +70,17 @@ $light: white;
             background-color: $dark-gray;
             padding: $desktop-gap;
         }
+
+        .actions-menu a {
+            background-color: rgba(54, 54, 54, 0.8);
+            color: white;
+            border: 1px solid transparent;
+
+            .in-view {
+                background-color: white;
+                color: $dark;
+            }
+        }
     }
 }
 
@@ -88,15 +99,34 @@ $light: white;
     height: fit-content;
 
     @media screen and (max-width: $mobile-max) {
+        position: fixed;
+        z-index: 999;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: $mobile-spacing;
+    }
+
+    @media screen and (max-width: $mini-max) {
         display: none;
+    }
+
+    li {
+        &:not(:last-child) {
+            margin-right: $medium;
+        }
     }
 
     a {
         min-width: 100px;
         text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
 
-        &:not(:last-child) {
-            margin-right: $medium;
+        &.in-view {
+            background-color: $dark;
+            color: $light;
         }
     }
 }
@@ -213,7 +243,7 @@ $light: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: $desktop-spacing;
+    padding-bottom: $desktop-gutter ;
 
     @media screen and (max-width: $mobile-max) {
         display: block;
