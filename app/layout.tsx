@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     siteName: 'Aaron Miller Design',
     images: [
       {
-        url: '/static/images/aaron-profile-pic_mobile.png', // Must be an absolute URL
+        url: '/static/images/aaron-profile-pic_mobile.png',
         width: 681,
         height: 681,
         alt: 'Aaron Miller headshot',
