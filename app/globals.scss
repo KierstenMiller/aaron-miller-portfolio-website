@@ -94,12 +94,30 @@ main {
     margin-bottom: $mobile-gap;
   }
 
+  &.three-column {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width: $mobile-max) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+}
+
+.image-border {
+  border-radius: 20px;
+}
+
+.image-block {
+  background: $light-gray;
+  border-radius: 20px;
 }
 
 .bare-image {
   margin-bottom: $desktop-gap;
   max-width: 1248px;
   width: 100%;
+  border-radius: 20px;
 
   @media screen and (max-width: $mobile-max) {
     margin-bottom: $mobile-gap;
