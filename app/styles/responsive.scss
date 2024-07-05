@@ -62,3 +62,25 @@
         display: none !important;
     }
 }
+
+.desktop-only {
+    @media screen and (max-width: $tablet-max) {
+        display: none !important;
+    }
+}
+
+.tablet-only {
+    @media screen and (min-width: $desktop-min) {
+        display: none !important;
+    }
+
+    @media screen and (max-width: $new-mobile-max) {
+        display: none !important;
+    }
+}
+
+.mobile-only {
+    @media screen and (min-width: $new-tablet-min) {
+        display: none !important;
+    }
+}

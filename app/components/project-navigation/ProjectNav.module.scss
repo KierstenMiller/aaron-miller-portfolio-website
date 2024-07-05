@@ -1,5 +1,6 @@
 @import '/app/styles/space.scss';
 @import '/app/styles/text.scss';
+@import '/app/styles/pill.scss';
 @import '/app/page.module.scss';
 
 .projects-menu {
@@ -9,11 +10,15 @@
     margin-top: $desktop-spacing;
     margin-bottom: $desktop-spacing;
 
-    @media screen and (max-width: $mobile-max) {
+    @media screen and (max-width: $tablet-max) {
         gap: $mobile-gap;
         grid-template-columns: 1fr;
         margin-top: $mobile-spacing;
         margin-bottom: $mobile-spacing;
+
+        img {
+            width: 100%;
+        }
     }
 
     a {
@@ -21,56 +26,26 @@
         position: relative;
         overflow: hidden;
         border-radius: 8px;
+        color: white !important;
 
         .project-name {
-            @include header-description-text;
-            width: 100%;
-            height: 100%;
+            font-size: $text-large;
+            font-weight: $text-weight-medium;
+            margin-bottom: $x-small;
+        }
+
+        .text-container {
             position: absolute;
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white !important;
-            opacity: 0;
-            transition: opacity 0.5s linear;
-            padding: $mobile-gap;
+            bottom: 0;
+            padding: 20px;
+            width: 100%;
         }
 
-        img {
-            animation: unblur 0.5s 1;
-        }
-
-        &:hover {
-            .project-name {
-                opacity: 1;
-            }
-
-            img {
-                animation: blur 0.5s 1;
-                filter: blur(1.5rem);
-            }
-        }
-    }
-
-    @keyframes blur {
-        0% {
-            filter: blur(0px);
-        }
-
-        100% {
-            filter: blur(1.5rem);
-        }
-    }
-
-    @keyframes unblur {
-        0% {
-            filter: blur(1.5rem);
-        }
-
-        100% {
-            filter: blur(0px);
+        .project-service {
+            @include pill-aligned-formatting;
+            @include pill;
+            border-color: white;
+            color: white;
         }
     }
 }

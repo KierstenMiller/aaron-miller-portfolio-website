@@ -20,17 +20,20 @@ export default function Home() {
       <header>
         <div className={styles['home-header']}>
           <h1 className="primary-title">Aaron Miller</h1>
-          <ul className={styles['actions-menu']}>
-            <li className="mobile-max-down-only">
-              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'work' })} href={`#${viewOptions.work}`}>{isWorkMode ? "Work" : "Not Work"}</a>
-            </li>
-            <li>
-              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'profile' })} href={`#${viewOptions.profile}`}>Info</a>
-            </li>
-            <li>
-              <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'contact' })} href={`#${viewOptions.contact}`}>Contact</a>
-            </li>
-          </ul>
+          <nav aria-label="primary">
+            <ul className={styles['actions-menu']}>
+              <li className="mobile-max-down-only">
+                <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'work' })} href={`#${viewOptions.work}`}>{isWorkMode ? "Work" : "Not Work"}</a>
+              </li>
+              <li>
+                <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'profile' })} href={`#${viewOptions.profile}`}>Info</a>
+              </li>
+              <li>
+                <a className={classNames('ghostly-button', { [styles['in-view']]: currentView === 'contact' })} href={`#${viewOptions.contact}`}>Contact</a>
+              </li>
+            </ul>
+          </nav>
+
         </div>
         <p className={classNames(styles['header-description'])}>
           {isWorkMode

@@ -1,0 +1,24 @@
+@import '/app/styles/text.scss';
+
+$pill-height: calc(3 * $font-unit); // 30px with border (making width relative to text size so formatting is still correct if use changes their font-size)
+
+@mixin pill-aligned-formatting {
+    display: inline-flex;
+    align-items: center;
+    height: $pill-height;
+}
+
+@mixin pill {
+    display: inline-flex;
+    align-items: center;
+    height: 3rem;
+    border: 1px solid $base-gray;
+    border-radius: 10px;
+    font-size: $text-xx-small;
+    font-weight: $text-weight-semi-bold;
+    color: $base-gray;
+    padding-left: $x-small;
+    padding-right: $x-small;
+    margin-right: $x-small;
+    margin-bottom: $x-small;
+}

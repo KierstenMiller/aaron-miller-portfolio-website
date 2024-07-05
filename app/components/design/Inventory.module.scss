@@ -1,19 +1,7 @@
 @import '/app/styles/text.scss';
 @import '/app/styles/space.scss';
 @import '/app/styles/color.scss';
-
-$pill-height: calc(3 * $font-unit); // 30px with border (making width relative to text size so formatting is still correct if use changes their font-size)
-
-@mixin pill-aligned-formatting {
-    display: inline-flex;
-    align-items: center;
-    height: $pill-height;
-}
-
-@mixin pill {
-    border: 1px solid $base-gray;
-    border-radius: 10px;
-}
+@import '/app/styles/pill.scss';
 
 .inventory {
     display: flex;
@@ -44,13 +32,6 @@ $pill-height: calc(3 * $font-unit); // 30px with border (making width relative t
             // same on mobile and desktop
             @include pill-aligned-formatting;
             @include pill;
-            font-size: $text-xx-small;
-            font-weight: $text-weight-semi-bold;
-            color: $base-gray;
-            padding-left: $x-small;
-            padding-right: $x-small;
-            margin-right: $x-small;
-            margin-bottom: $x-small;
         }
 
         .date {
